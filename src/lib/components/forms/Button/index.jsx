@@ -51,6 +51,9 @@ export const Button = styled.button`
         ) {
             return "#fff";
         }
+        if (props.type === "text") {
+            return props.theme.type.primary;
+        }
     }};
     background-color: ${defaultColors};
     border-radius: ${props => {
@@ -70,8 +73,20 @@ export const Button = styled.button`
             if (props.type === "danger")
                 return props => props.theme.type.danger && lighten(0.05, props.theme.type.danger);
             if (props.type === "text") return props => props.theme.type.text;
-            return props => props.theme.type.default && lighten(0.09, props.theme.type.default);
+            return props => props.theme.type.primary && lighten(0.39, props.theme.type.primary);
         }};
+        color: ${props => {
+            if (!props.type) {
+                return props => props.theme.type.primary;
+            }
+        }};
+        border: 1px solid
+            ${props => {
+                if (!props.type) {
+                    return props => props.theme.type.primary;
+                }
+                return "transparent";
+            }};
     }
     &:active {
         background-color: ${props => {
@@ -84,11 +99,11 @@ export const Button = styled.button`
             if (props.type === "danger")
                 return props => props.theme.type.danger && darken(0.05, props.theme.type.danger);
             if (props.type === "text") return props => props.theme.type.text;
-            return props => props.theme.type.default && lighten(0.07, props.theme.type.default);
+            return props => props.theme.type.primary && lighten(0.35, props.theme.type.primary);
         }};
         color: ${props => {
             if (props.type === "text") {
-                return props => props.theme.type.default && darken(0.25, props.theme.type.default);
+                return props => props.theme.type.primary && darken(0.15, props.theme.type.primary);
             }
         }};
         box-shadow: 0 4px 15px -6px ${defaultColors};
@@ -102,6 +117,11 @@ export const Button = styled.button`
         &:hover {
             background-color: ${defaultColors};
         }
+        color: ${props => {
+            if (props.type === "text") {
+                return props => props.theme.type.default;
+            }
+        }};
     }
 `;
 

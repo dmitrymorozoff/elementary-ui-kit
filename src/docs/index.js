@@ -5,7 +5,13 @@ import { Button } from "../lib/components/forms/Button";
 const App = () => (
     <div>
         <div>
-            <Button>Default</Button>
+            <Button
+                onClick={() => {
+                    alert("hello");
+                }}
+            >
+                Default
+            </Button>
             <Button type="primary">Primary</Button>
             <Button type="success">Success</Button>
             <Button type="warning">Warning</Button>

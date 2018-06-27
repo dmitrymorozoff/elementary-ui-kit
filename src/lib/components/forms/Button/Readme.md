@@ -77,4 +77,6 @@
 | round     | round the button   | boolean | true / false                                     | false          |
 | type      | button type        | string  | default, primary, success, warning, danger, text | default        |
 | size      | button size        | string  | madium, small, mini                              | ---            |
+| children  | button children    | node    |                                                  | ---            |
+| onClick   | button event       | func    |                                                  | ---            |
 
