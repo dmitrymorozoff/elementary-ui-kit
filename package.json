@@ -1,0 +1,41 @@
+{
+    "name": "esthetic-ui-kit",
+    "version": "0.0.1",
+    "description": "UI Components Library",
+    "main": "./dist/lib/index.js",
+    "scripts": {
+        "start": "parcel src/docs/index.html",
+        "docs": "styleguidist server",
+        "build": "webpack --mode=production",
+        "build:docs": "styleguidist build",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "storybook": "start-storybook -p 9001 -c .storybook"
+    },
+    "author": "Morozov Dmitry",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-plugin-styled-components": "^1.5.1",
+        "parcel-bundler": "^1.9.3",
+        "path": "^0.12.7",
+        "react-styleguidist": "^7.0.19",
+        "webpack": "^4.12.1",
+        "webpack-cli": "^3.0.8",
+        "webpack-node-externals": "^1.7.2"
+    },
+    "dependencies": {
+        "classnames": "^2.2.6",
+        "polished": "^1.9.2",
+        "prop-types": "^15.6.2",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1",
+        "styled-components": "^3.3.3"
+    },
+    "babel": {
+        "plugins": [
+            "babel-plugin-styled-components",
+            "@babel/plugin-syntax-dynamic-import"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+# General files
+*~
+.DS_Store
+
+/dist
+
+# Build files
+styleguide/
+
+# Development stuff
+node_modules/
+.vagrant
+.idea
+.vscode
+npm-debug.*
