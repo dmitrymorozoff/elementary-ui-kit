@@ -6,7 +6,11 @@
 	<Button type="success">Success</Button>
 	<Button type="warning">Warning</Button>
 	<Button type="danger">Danger</Button>
-	<br/>
+```
+
+### Round Buttons:
+
+```jsx
 	<Button round>Default</Button>
 	<Button type="primary" round>
 		Primary
@@ -23,6 +27,8 @@
 ```
 
 ### Disabled Buttons:
+
+The `disabled` attribute determines if the button is disabled.
 
 ```jsx
 	<Button disabled={true}>Default</Button>
@@ -42,6 +48,8 @@
 
 ### Text Buttons:
 
+Buttons without border and background.
+
 ```jsx
 	<Button type="text">Default</Button>
 	<Button type="text" disabled={true}>
@@ -51,32 +59,22 @@
 
 ### Sizes:
 
+Besides default size, Button component provides three additional sizes.
+
 ```jsx
 	<Button>Default</Button>
-	<Button size="medium">Medium</Button>
-	<Button size="small">Small</Button>
-	<Button size="mini">Mini</Button>
+	<Button size="medium" type="primary">Medium</Button>
+	<Button size="small" type="primary">Small</Button>
+	<Button size="mini" type="primary">Mini</Button>
 	<br/>
 	<Button round>Default</Button>
-	<Button size="medium" round>
+	<Button size="medium" round type="danger">
 		Medium
 	</Button>
-	<Button size="small" round>
+	<Button size="small" round type="danger">
 		Small
 	</Button>
-	<Button size="mini" round>
+	<Button size="mini" round type="danger">
 		Mini
 	</Button>
 ```
-
-### Attributes:
-
-| Attribute | Description        | Type    | Accepted values                                  | Default values |
-| --------: | :----------------: | :-----: | :----------------------------------------------: | :------------: |
-| disabled  | disable the button | boolean | true / false                                     | false          |
-| round     | round the button   | boolean | true / false                                     | false          |
-| type      | button type        | string  | default, primary, success, warning, danger, text | default        |
-| size      | button size        | string  | madium, small, mini                              | ---            |
-| children  | button children    | node    |                                                  | ---            |
-| onClick   | button event       | func    |                                                  | ---            |
-

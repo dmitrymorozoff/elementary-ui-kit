@@ -7,12 +7,9 @@ const webpackConfig = {
     module: {
         rules: [
             {
-                test: /\.js$/,
-                include: rootDirectory,
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
                 loader: "babel-loader",
-                options: {
-                    presets: ["@babel/preset-env", "@babel/react"],
-                },
             },
             {
                 test: /\.css$/,
@@ -26,13 +23,28 @@ module.exports = {
     title: "Esthetic UI Kit",
     sections: [
         {
-            name: "Quick start",
             content: "./README.md",
         },
         {
             name: "Forms",
             components: `${ROOT_PATH}/components/forms/**/*.jsx`,
         },
+        {
+            name: "Icons",
+            components: `${ROOT_PATH}/components/icons/**/*.jsx`,
+        },
     ],
+    theme: {
+        color: {
+            baseBackground: "#fff",
+            sidebarBackground: "#fff",
+            codeBackground: "#F9F9F9",
+            link: "#000",
+            linkHover: "#FE0C0D",
+        },
+        fontFamily: {
+            base: '"Roboto", sans-serif',
+        },
+    },
     webpackConfig,
 };

@@ -11,11 +11,10 @@ const defaultColors = props => {
     return "transparent";
 };
 
-export const Button = styled.button`
+const ButtonElement = styled.button`
     font-family: "Lato", sans-serif;
     font-size: 15px;
     border: 2px solid ${props => props.theme.type.default};
-    border-radius: 4px;
     background-color: transparent;
     line-height: 1;
     white-space: nowrap;
@@ -30,7 +29,7 @@ export const Button = styled.button`
         return props.theme.size.default;
     }};
     transition: 0.15s;
-    margin: 8px;
+    margin: 12px;
     color: "#333";
     cursor: pointer;
     border: 1px solid
@@ -73,7 +72,7 @@ export const Button = styled.button`
             if (props.type === "danger")
                 return props => props.theme.type.danger && lighten(0.05, props.theme.type.danger);
             if (props.type === "text") return props => props.theme.type.text;
-            return props => props.theme.type.primary && lighten(0.39, props.theme.type.primary);
+            return props => props.theme.type.primary && lighten(0.35, props.theme.type.primary);
         }};
         color: ${props => {
             if (!props.type) {
@@ -99,7 +98,7 @@ export const Button = styled.button`
             if (props.type === "danger")
                 return props => props.theme.type.danger && darken(0.05, props.theme.type.danger);
             if (props.type === "text") return props => props.theme.type.text;
-            return props => props.theme.type.primary && lighten(0.35, props.theme.type.primary);
+            return props => props.theme.type.primary && lighten(0.32, props.theme.type.primary);
         }};
         color: ${props => {
             if (props.type === "text") {
@@ -125,26 +124,37 @@ export const Button = styled.button`
     }
 `;
 
+export class Button extends React.Component {
+    render() {
+        return <ButtonElement {...this.props} />;
+    }
+}
+
 Button.defaultProps = {
     theme: {
         type: {
             default: "#d8dadd",
-            primary: "#1E68FA",
-            success: "#2DD6AE",
+            primary: "#3A77F8",
+            success: "#4FD496",
             warning: "#FAAF27",
             danger: "#FE0C0D",
             text: "transparent",
         },
         size: {
-            default: "14px 28px",
-            medium: "10px 16px",
-            small: "6px 18px",
-            mini: "4px 14px",
+            default: "15px 36px",
+            medium: "12px 20px",
+            small: "8px 18px",
+            mini: "6px 14px",
         },
     },
+    leftIconComponent: null,
+    rightIconComponent: null,
 };
 
 Button.propTypes = {
+    leftIconComponent: PropTypes.node,
+    rightIconComponent: PropTypes.node,
+    theme: PropTypes.object,
     children: PropTypes.node,
     disabled: PropTypes.bool,
     round: PropTypes.bool,

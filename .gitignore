@@ -4,6 +4,7 @@
 
 /dist
 .cache
+/styleguide
 
 # Build files
 styleguide/
