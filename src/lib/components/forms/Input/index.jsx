@@ -26,9 +26,9 @@ const InputWrapper = styled.div`
     height: 45px;
     width: 220px;
     transition: 0.2s;
-    margin: 12px;
     background: ${props => (props.disabled ? "#F5F8FF" : "transparen")};
     box-shadow: 0 4px 15px -6px #d8dadd;
+    margin: ${props => props.margin};
 `;
 
 export const InputElement = styled.input`
@@ -74,9 +74,9 @@ export class Input extends React.Component {
 
     render() {
         const { hasFocus } = this.state;
-        const { leftIconComponent, rightIconComponent, error } = this.props;
+        const { leftIconComponent, rightIconComponent, error, margin } = this.props;
         return (
-            <InputWrapper hasFocus={hasFocus} disabled={this.props.disabled} error={error}>
+            <InputWrapper hasFocus={hasFocus} disabled={this.props.disabled} error={error} margin={margin}>
                 {Boolean(leftIconComponent) && <Icon>{leftIconComponent}</Icon>}
                 <InputElement {...this.props} onFocus={() => this.setFocus(true)} onBlur={() => this.setFocus(false)} />
                 {Boolean(rightIconComponent) && <Icon>{rightIconComponent}</Icon>}
@@ -92,6 +92,7 @@ Input.defaultProps = {
     disabled: false,
     required: false,
     error: false,
+    margin: 0,
 };
 
 Input.propTypes = {
@@ -103,4 +104,5 @@ Input.propTypes = {
     onChange: PropTypes.func.isRequired,
     required: PropTypes.bool,
     error: PropTypes.bool,
+    margin: PropTypes.string,
 };

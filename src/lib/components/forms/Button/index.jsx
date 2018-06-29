@@ -4,10 +4,10 @@ import { lighten, darken } from "polished";
 import { PropTypes } from "prop-types";
 
 const defaultColors = props => {
-    if (props.type === "primary") return props => props.theme.type.primary;
-    if (props.type === "success") return props => props.theme.type.success;
-    if (props.type === "warning") return props => props.theme.type.warning;
-    if (props.type === "danger") return props => props.theme.type.danger;
+    if (props.type === "primary") return props.theme.type.primary;
+    if (props.type === "success") return props.theme.type.success;
+    if (props.type === "warning") return props.theme.type.warning;
+    if (props.type === "danger") return props.theme.type.danger;
     return "transparent";
 };
 
@@ -20,7 +20,8 @@ const ButtonElement = styled.button`
     white-space: nowrap;
     box-sizing: border-box;
     outline: none;
-    margin: 0;
+    margin: ${props => props.margin};
+    width: ${props => (props.fullWidth ? "100%" : "auto")};
     text-align: center;
     padding: ${props => {
         if (props.size === "medium") return props.theme.size.medium;
@@ -29,7 +30,6 @@ const ButtonElement = styled.button`
         return props.theme.size.default;
     }};
     transition: 0.15s;
-    margin: 12px;
     color: "#333";
     cursor: pointer;
     border: 1px solid
@@ -63,46 +63,38 @@ const ButtonElement = styled.button`
     box-shadow: 0 8px 25px -6px ${defaultColors};
     &:hover {
         background-color: ${props => {
-            if (props.type === "primary")
-                return props => props.theme.type.primary && lighten(0.05, props.theme.type.primary);
-            if (props.type === "success")
-                return props => props.theme.type.success && lighten(0.05, props.theme.type.success);
-            if (props.type === "warning")
-                return props => props.theme.type.warning && lighten(0.05, props.theme.type.warning);
-            if (props.type === "danger")
-                return props => props.theme.type.danger && lighten(0.05, props.theme.type.danger);
-            if (props.type === "text") return props => props.theme.type.text;
-            return props => props.theme.type.primary && lighten(0.35, props.theme.type.primary);
+            if (props.type === "primary") return props.theme.type.primary && lighten(0.05, props.theme.type.primary);
+            if (props.type === "success") return props.theme.type.success && lighten(0.05, props.theme.type.success);
+            if (props.type === "warning") return props.theme.type.warning && lighten(0.05, props.theme.type.warning);
+            if (props.type === "danger") return props.theme.type.danger && lighten(0.05, props.theme.type.danger);
+            if (props.type === "text") return props.theme.type.text;
+            return props.theme.type.primary && lighten(0.35, props.theme.type.primary);
         }};
         color: ${props => {
             if (!props.type) {
-                return props => props.theme.type.primary;
+                return props.theme.type.primary;
             }
         }};
         border: 1px solid
             ${props => {
                 if (!props.type) {
-                    return props => props.theme.type.primary;
+                    return props.theme.type.primary;
                 }
                 return "transparent";
             }};
     }
     &:active {
         background-color: ${props => {
-            if (props.type === "primary")
-                return props => props.theme.type.primary && darken(0.05, props.theme.type.primary);
-            if (props.type === "success")
-                return props => props.theme.type.success && darken(0.05, props.theme.type.success);
-            if (props.type === "warning")
-                return props => props.theme.type.warning && darken(0.05, props.theme.type.warning);
-            if (props.type === "danger")
-                return props => props.theme.type.danger && darken(0.05, props.theme.type.danger);
-            if (props.type === "text") return props => props.theme.type.text;
-            return props => props.theme.type.primary && lighten(0.32, props.theme.type.primary);
+            if (props.type === "primary") return props.theme.type.primary && darken(0.05, props.theme.type.primary);
+            if (props.type === "success") return props.theme.type.success && darken(0.05, props.theme.type.success);
+            if (props.type === "warning") return props.theme.type.warning && darken(0.05, props.theme.type.warning);
+            if (props.type === "danger") return props.theme.type.danger && darken(0.05, props.theme.type.danger);
+            if (props.type === "text") return props.theme.type.text;
+            return props.theme.type.primary && lighten(0.32, props.theme.type.primary);
         }};
         color: ${props => {
             if (props.type === "text") {
-                return props => props.theme.type.primary && darken(0.15, props.theme.type.primary);
+                return props.theme.type.primary && darken(0.15, props.theme.type.primary);
             }
         }};
         box-shadow: 0 4px 15px -6px ${defaultColors};
@@ -118,7 +110,7 @@ const ButtonElement = styled.button`
         }
         color: ${props => {
             if (props.type === "text") {
-                return props => props.theme.type.default;
+                return props.theme.type.default;
             }
         }};
     }
@@ -149,6 +141,8 @@ Button.defaultProps = {
     },
     leftIconComponent: null,
     rightIconComponent: null,
+    fullWidth: false,
+    margin: 0,
 };
 
 Button.propTypes = {
@@ -157,7 +151,9 @@ Button.propTypes = {
     theme: PropTypes.object,
     children: PropTypes.node,
     disabled: PropTypes.bool,
+    fullWidth: PropTypes.bool,
     round: PropTypes.bool,
     type: PropTypes.oneOf(["default", "primary", "success", "warning", "danger", "text"]),
     size: PropTypes.oneOf(["medium", "small", "mini"]),
+    margin: PropTypes.string,
 };

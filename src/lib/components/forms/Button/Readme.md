@@ -1,27 +1,27 @@
 ### Basic Usage:
 
 ```jsx
-	<Button>Default</Button>
-	<Button type="primary">Primary</Button>
-	<Button type="success">Success</Button>
-	<Button type="warning">Warning</Button>
-	<Button type="danger">Danger</Button>
+	<Button margin="8px">Default</Button>
+	<Button margin="8px" type="primary">Primary</Button>
+	<Button margin="8px" type="success">Success</Button>
+	<Button margin="8px" type="warning">Warning</Button>
+	<Button margin="8px" type="danger">Danger</Button>
 ```
 
 ### Round Buttons:
 
 ```jsx
-	<Button round>Default</Button>
-	<Button type="primary" round>
+	<Button margin="8px" round>Default</Button>
+	<Button margin="8px" type="primary" round>
 		Primary
 	</Button>
-	<Button type="success" round>
+	<Button margin="8px" type="success" round>
 		Success
 	</Button>
-	<Button type="warning" round>
+	<Button margin="8px" type="warning" round>
 		Warning
 	</Button>
-	<Button type="danger" round>
+	<Button margin="8px" type="danger" round>
 		Danger
 	</Button>
 ```
@@ -31,17 +31,17 @@
 The `disabled` attribute determines if the button is disabled.
 
 ```jsx
-	<Button disabled={true}>Default</Button>
-	<Button disabled={true} type="primary">
+	<Button margin="8px" disabled={true}>Default</Button>
+	<Button margin="8px" disabled={true} type="primary">
 		Primary
 	</Button>
-	<Button disabled={true} type="success">
+	<Button margin="8px" disabled={true} type="success">
 		Success
 	</Button>
-	<Button disabled={true} type="warning">
+	<Button margin="8px" disabled={true} type="warning">
 		Warning
 	</Button>
-	<Button disabled={true} type="danger">
+	<Button margin="8px" disabled={true} type="danger">
 		Danger
 	</Button>
 ```
@@ -51,8 +51,8 @@ The `disabled` attribute determines if the button is disabled.
 Buttons without border and background.
 
 ```jsx
-	<Button type="text">Default</Button>
-	<Button type="text" disabled={true}>
+	<Button margin="8px" type="text">Default</Button>
+	<Button margin="8px" type="text" disabled={true}>
 		Primary
 	</Button>
 ```
@@ -62,19 +62,19 @@ Buttons without border and background.
 Besides default size, Button component provides three additional sizes.
 
 ```jsx
-	<Button>Default</Button>
-	<Button size="medium" type="primary">Medium</Button>
-	<Button size="small" type="primary">Small</Button>
-	<Button size="mini" type="primary">Mini</Button>
+	<Button margin="8px">Default</Button>
+	<Button margin="8px" size="medium" type="primary">Medium</Button>
+	<Button margin="8px" size="small" type="primary">Small</Button>
+	<Button margin="8px" size="mini" type="primary">Mini</Button>
 	<br/>
-	<Button round>Default</Button>
-	<Button size="medium" round type="danger">
+	<Button margin="8px" round>Default</Button>
+	<Button margin="8px" size="medium" round type="danger">
 		Medium
 	</Button>
-	<Button size="small" round type="danger">
+	<Button margin="8px" size="small" round type="danger">
 		Small
 	</Button>
-	<Button size="mini" round type="danger">
+	<Button margin="8px" size="mini" round type="danger">
 		Mini
 	</Button>
 ```

@@ -30,6 +30,10 @@ module.exports = {
             components: `${ROOT_PATH}/components/forms/**/*.jsx`,
         },
         {
+            name: "Others",
+            components: `${ROOT_PATH}/components/others/**/*.jsx`,
+        },
+        {
             name: "Icons",
             components: `${ROOT_PATH}/components/icons/**/*.jsx`,
         },
