@@ -36,7 +36,6 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
     "polished": "^1.9.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
