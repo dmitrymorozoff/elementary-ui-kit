@@ -10,10 +10,11 @@
   "scripts": {
     "start": "parcel src/docs/index.html",
     "docs": "styleguidist server",
-    "build": "webpack --mode=production",
+    "build": "npm run clean && webpack --mode=production && npm run prepublish",
     "build:docs": "styleguidist build",
     "prepublish": "cp ./README.md build && cp ./package.json build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf build/*"
   },
   "author": "Morozov Dmitry",
   "license": "MIT",
@@ -31,6 +32,7 @@
     "parcel-bundler": "^1.9.3",
     "path": "^0.12.7",
     "react-styleguidist": "^7.0.19",
+    "rimraf": "^2.6.2",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8",
     "webpack-node-externals": "^1.7.2"
