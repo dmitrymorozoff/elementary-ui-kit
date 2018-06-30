@@ -9,4 +9,15 @@ import { Text } from "./components/others/Text";
 import { Search } from "./components/icons/Search";
 import { RightArrow } from "./components/icons/RightArrow";
 
-export { Button, Switch, Input, Card, CardButtons, CardContent, CardMedia, Text, Search, RightArrow };
+export {
+    Button,
+    Switch,
+    Input,
+    Card,
+    CardButtons,
+    CardContent,
+    CardMedia,
+    Text,
+    Search,
+    RightArrow
+};

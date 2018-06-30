@@ -1,0 +1,9 @@
+src
+/docs
+node_modules/
+styleguide.*
+.babelrc
+.gitignore
+.editorconfig
+webpack.config.js
+styleguide.config.js

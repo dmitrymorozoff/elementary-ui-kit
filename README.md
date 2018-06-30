@@ -1,17 +1,17 @@
-## Esthetic UI React
+## Elementary UI React
 
 A collection of reusable React UI components built with [styled-components](https://styled-components.com).
 
 ### Install
 
 ```bash
-npm install --save esthetic-ui-kit
+npm install --save elementary-ui-kit
 ```
 
 You can also test the components locally by cloning this repo and doing the following steps:
 
 ```bash
-git clone https://github.com/dmitrymorozoff/esthetic-ui-kit.git
+git clone https://github.com/dmitrymorozoff/elementary-ui-kit.git
 ```
 
 Install dependencies from package.json:

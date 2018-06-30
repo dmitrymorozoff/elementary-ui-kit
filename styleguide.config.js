@@ -9,34 +9,34 @@ const webpackConfig = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: "babel-loader",
+                loader: "babel-loader"
             },
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader"],
-            },
-        ],
-    },
+                use: ["style-loader", "css-loader"]
+            }
+        ]
+    }
 };
 
 module.exports = {
-    title: "Esthetic UI Kit",
+    title: "Elementary UI Kit",
     sections: [
         {
-            content: "./README.md",
+            content: "./README.md"
         },
         {
             name: "Forms",
-            components: `${ROOT_PATH}/components/forms/**/*.jsx`,
+            components: `${ROOT_PATH}/components/forms/**/*.jsx`
         },
         {
             name: "Others",
-            components: `${ROOT_PATH}/components/others/**/*.jsx`,
+            components: `${ROOT_PATH}/components/others/**/*.jsx`
         },
         {
             name: "Icons",
-            components: `${ROOT_PATH}/components/icons/**/*.jsx`,
-        },
+            components: `${ROOT_PATH}/components/icons/**/*.jsx`
+        }
     ],
     theme: {
         color: {
@@ -44,11 +44,11 @@ module.exports = {
             sidebarBackground: "#fff",
             codeBackground: "#F9F9F9",
             link: "#000",
-            linkHover: "#FE0C0D",
+            linkHover: "#FE0C0D"
         },
         fontFamily: {
-            base: '"Roboto", sans-serif',
-        },
+            base: '"Roboto", sans-serif'
+        }
     },
-    webpackConfig,
+    webpackConfig
 };

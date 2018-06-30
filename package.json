@@ -1,21 +1,24 @@
 {
-  "name": "esthetic-ui-kit",
+  "name": "elementary-ui-kit",
   "version": "0.0.1",
   "description": "UI Components Library",
-  "main": "./dist/lib/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "parcel src/docs/index.html",
     "docs": "styleguidist server",
     "build": "webpack --mode=production",
     "build:docs": "styleguidist build",
+    "prepublish": "npm run build && cp ./package.json build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Morozov Dmitry",
   "license": "MIT",
   "devDependencies": {
-    "babel": "^6.23.0",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^8.0.0-beta.4",
     "babel-plugin-styled-components": "^1.5.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",

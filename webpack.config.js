@@ -4,10 +4,10 @@ const nodeExternals = require("webpack-node-externals");
 module.exports = {
     entry: path.resolve(__dirname, "src/lib/index.js"),
     output: {
-        path: path.resolve(__dirname, "./build/lib"),
+        path: path.resolve(__dirname, "./build"),
         filename: "index.js",
         library: "",
-        libraryTarget: "commonjs",
+        libraryTarget: "commonjs"
     },
     externals: [nodeExternals()],
     module: {
@@ -17,13 +17,13 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: "babel-loader",
                 options: {
-                    presets: ["env", "react"],
-                },
+                    presets: ["@babel/preset-env", "@babel/react"]
+                }
             },
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader"],
-            },
-        ],
-    },
+                use: ["style-loader", "css-loader"]
+            }
+        ]
+    }
 };
