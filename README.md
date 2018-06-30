@@ -31,3 +31,33 @@ Start react-styleguidist
 ```bash
 npm run docs
 ```
+
+### Basic Usage:
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import { Button } from "elementary-ui-kit";
+
+function App() {
+    return <Button type="primary">Hello World</Button>;
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
+```
+
+### Components:
+
+-   Forms
+    -   [Button](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Button)
+    -   [Input](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Input)
+    -   [Switch](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Switch)
+-   Others
+    -   [Card](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Card)
+        -   [CardButtons](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Card/components/CardButtons)
+        -   [CardContent](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Card/components/CardContent)
+        -   [CardMedia](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Card/components/CardMedia)
+    -   [Text](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Text)
+-   Icons
+    -   [RightArrow](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/icons/RightArrow)
+    -   [Search](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/icons/Search)
