@@ -7,7 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, "./build"),
         filename: "index.js",
         library: "",
-        libraryTarget: "commonjs"
+        libraryTarget: "commonjs",
     },
     externals: [nodeExternals()],
     module: {
@@ -17,13 +17,13 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: "babel-loader",
                 options: {
-                    presets: ["@babel/preset-env", "@babel/react"]
-                }
+                    presets: ["@babel/preset-env", "@babel/react"],
+                },
             },
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader"]
-            }
-        ]
-    }
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 };

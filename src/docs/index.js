@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Button, Switch } from "../../build/lib";
+import { Button } from "../lib/components/forms/Button";
 
 const App = () => (
     <div>
-        <Button type="primary">hELLO </Button>
-        <Switch />
+        <div>
+            <Button>Hello</Button>
+        </div>
+        <br />
+        <div />
     </div>
 );
 ReactDOM.render(<App />, document.getElementById("root"));

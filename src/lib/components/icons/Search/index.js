@@ -2,7 +2,7 @@ import React from "react";
 import { PropTypes } from "prop-types";
 
 export const Search = props => {
-    const { size, fill, style } = props;
+    const { size, fill } = props;
     const defaultStyles = {};
     if (size) {
         defaultStyles.width = defaultStyles.height = size;

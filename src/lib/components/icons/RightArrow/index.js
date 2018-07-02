@@ -2,7 +2,7 @@ import React from "react";
 import { PropTypes } from "prop-types";
 
 export const RightArrow = props => {
-    const { size, fill, style } = props;
+    const { size, fill } = props;
     const defaultStyles = {};
     if (size) {
         defaultStyles.width = defaultStyles.height = size;
@@ -26,11 +26,11 @@ export const RightArrow = props => {
 RightArrow.defaultProps = {
     size: "14px",
     fill: "#abb3c8",
-    style: {}
+    style: {},
 };
 
 RightArrow.propTypes = {
     size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     fill: PropTypes.string,
-    style: PropTypes.object
+    style: PropTypes.object,
 };

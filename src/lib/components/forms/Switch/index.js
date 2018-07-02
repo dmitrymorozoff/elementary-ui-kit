@@ -74,4 +74,5 @@ Switch.propTypes = {
     onChange: PropTypes.func,
     name: PropTypes.string,
     color: PropTypes.string,
+    disabled: PropTypes.bool,
 };

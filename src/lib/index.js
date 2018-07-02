@@ -8,6 +8,10 @@ import { CardMedia } from "./components/others/Card/components/CardMedia";
 import { Text } from "./components/others/Text";
 import { Search } from "./components/icons/Search";
 import { RightArrow } from "./components/icons/RightArrow";
+import { DownArrow } from "./components/icons/DownArrow";
+import { UpArrow } from "./components/icons/UpArrow";
+import { Select } from "./components/forms/Select";
+import { SelectItem } from "./components/forms/Select/components/SelectItem";
 
 export {
     Button,
@@ -19,5 +23,9 @@ export {
     CardMedia,
     Text,
     Search,
-    RightArrow
+    RightArrow,
+    DownArrow,
+    UpArrow,
+    Select,
+    SelectItem,
 };

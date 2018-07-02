@@ -1,42 +1,42 @@
-const path = require("path");
 const ROOT_PATH = "./src/lib";
-const rootDirectory = path.resolve(__dirname, ROOT_PATH);
-const componentsDirectory = path.resolve(__dirname, `${ROOT_PATH}/components`);
 
 const webpackConfig = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "babel-loader"
+                loader: "babel-loader",
+                options: {
+                    presets: ["@babel/preset-env", "@babel/react"],
+                },
             },
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader"]
-            }
-        ]
-    }
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 };
 
 module.exports = {
     title: "Elementary UI Kit",
     sections: [
         {
-            content: "./README.md"
+            content: "./README.md",
         },
         {
             name: "Forms",
-            components: `${ROOT_PATH}/components/forms/**/*.jsx`
+            components: `${ROOT_PATH}/components/forms/**/*.js`,
         },
         {
             name: "Others",
-            components: `${ROOT_PATH}/components/others/**/*.jsx`
+            components: `${ROOT_PATH}/components/others/**/*.js`,
         },
         {
             name: "Icons",
-            components: `${ROOT_PATH}/components/icons/**/*.jsx`
-        }
+            components: `${ROOT_PATH}/components/icons/**/*.js`,
+        },
     ],
     theme: {
         color: {
@@ -44,11 +44,11 @@ module.exports = {
             sidebarBackground: "#fff",
             codeBackground: "#F9F9F9",
             link: "#000",
-            linkHover: "#FE0C0D"
+            linkHover: "#FE0C0D",
         },
         fontFamily: {
-            base: '"Roboto", sans-serif'
-        }
+            base: '"Roboto", sans-serif',
+        },
     },
-    webpackConfig
+    webpackConfig,
 };

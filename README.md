@@ -1,4 +1,4 @@
-## Elementary UI React
+## Elementary UI
 
 A collection of reusable React UI components built with [styled-components](https://styled-components.com).
 
@@ -52,6 +52,8 @@ ReactDOM.render(<App />, document.getElementById("root"));
     -   [Button](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Button)
     -   [Input](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Input)
     -   [Switch](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Switch)
+    -   [Select](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Select)
+        -   [SelectItem](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Select/components/SelectItem)
 -   Others
     -   [Card](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Card)
         -   [CardButtons](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Card/components/CardButtons)
@@ -60,4 +62,6 @@ ReactDOM.render(<App />, document.getElementById("root"));
     -   [Text](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Text)
 -   Icons
     -   [RightArrow](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/icons/RightArrow)
+    -   [RightUp](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/icons/RightUp)
+    -   [RightDown](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/icons/RightDown)
     -   [Search](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/icons/Search)
