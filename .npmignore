@@ -1,4 +1,5 @@
 src
+dist
 /docs
 node_modules/
 styleguide.*
