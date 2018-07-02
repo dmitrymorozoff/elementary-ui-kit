@@ -112,7 +112,9 @@ export class Select extends React.Component {
                 value,
             },
         });
-        onChange({ value, name });
+        if (onChange) {
+            onChange({ value, name });
+        }
         this.toggleSelect();
     }
 

@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Button } from "../lib/components/forms/Button";
+import { Select, SelectItem } from "../../build";
 
 const App = () => (
     <div>
         <div>
-            <Button>Hello</Button>
+            <Select>
+                <SelectItem>option 1</SelectItem>
+                <SelectItem>option 2</SelectItem>
+            </Select>
         </div>
-        <br />
-        <div />
     </div>
 );
 ReactDOM.render(<App />, document.getElementById("root"));
