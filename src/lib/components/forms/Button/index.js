@@ -142,7 +142,7 @@ Button.defaultProps = {
     leftIconComponent: null,
     rightIconComponent: null,
     fullWidth: false,
-    margin: 0,
+    margin: "0px",
 };
 
 Button.propTypes = {

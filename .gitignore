@@ -2,10 +2,10 @@
 *~
 .DS_Store
 
-/dist
-/build
+dist
+build
 .cache
-/styleguide
+styleguide
 
 # Build files
 styleguide/

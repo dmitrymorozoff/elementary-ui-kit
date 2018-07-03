@@ -92,7 +92,7 @@ Input.defaultProps = {
     disabled: false,
     required: false,
     error: false,
-    margin: 0,
+    margin: "0px",
 };
 
 Input.propTypes = {

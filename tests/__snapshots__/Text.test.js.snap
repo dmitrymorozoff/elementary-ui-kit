@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text/> should render a default text 1`] = `
+<p
+  className="sc-bdVaJa fYXPQU"
+  fontSize="14px"
+>
+  They live almost exclusively in the Southern Hemisphere, with only one species, the Galapagos penguin, found north of the equator.
+</p>
+`;

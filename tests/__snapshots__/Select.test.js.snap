@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select/> should render a default select 1`] = `
+<styled.div>
+  <styled.div
+    disabled={false}
+    onClick={[Function]}
+  >
+    <styled.input
+      disabled={false}
+      placeholder=""
+      readOnly={true}
+      value=""
+    />
+    <styled.div
+      open={false}
+    >
+      <DownArrow
+        fill="#abb3c8"
+        size="14px"
+        style={Object {}}
+      />
+    </styled.div>
+  </styled.div>
+  <styled.div
+    open={false}
+  >
+    <styled.div
+      disabled={false}
+      key="0"
+      onClick={[Function]}
+      value=""
+    >
+      One
+    </styled.div>
+    <styled.div
+      disabled={false}
+      key="1"
+      onClick={[Function]}
+      value=""
+    >
+      Two
+    </styled.div>
+    <styled.div
+      disabled={false}
+      key="2"
+      onClick={[Function]}
+      value=""
+    >
+      Three
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;

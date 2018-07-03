@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input/> should render a default input 1`] = `
+<styled.div
+  disabled={false}
+  error={false}
+  hasFocus={false}
+  margin="0px"
+>
+  <styled.input
+    disabled={false}
+    error={false}
+    leftIconComponent={null}
+    margin="0px"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    required={false}
+    rightIconComponent={null}
+    type="text"
+    value=""
+  />
+</styled.div>
+`;

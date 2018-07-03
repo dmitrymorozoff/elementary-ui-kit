@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card/> should render a default card 1`] = `
+<div
+  className="sc-bdVaJa Wkyni"
+  height="260px"
+  width="275px"
+>
+  <styled.div
+    padding="15px 5px"
+  >
+    <styled.p
+      fontSize="28px"
+      gutterBottom={true}
+    >
+      Penguin
+    </styled.p>
+    <styled.p
+      fontSize="14px"
+      gutterBottom={false}
+    >
+      They live almost exclusively in the Southern Hemisphere, with only one species, the Galapagos penguin, found north of the equator.
+    </styled.p>
+    <styled.div>
+      <Button
+        fullWidth={true}
+        leftIconComponent={null}
+        margin="0px"
+        rightIconComponent={null}
+        theme={
+          Object {
+            "size": Object {
+              "default": "15px 36px",
+              "medium": "12px 20px",
+              "mini": "6px 14px",
+              "small": "8px 18px",
+            },
+            "type": Object {
+              "danger": "#FE0C0D",
+              "default": "#d8dadd",
+              "primary": "#3A77F8",
+              "success": "#4FD496",
+              "text": "transparent",
+              "warning": "#FAAF27",
+            },
+          }
+        }
+      >
+        Learn More
+      </Button>
+    </styled.div>
+  </styled.div>
+</div>
+`;

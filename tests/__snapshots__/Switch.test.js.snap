@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Switch/> should render a default switch 1`] = `
+<styled.label>
+  <styled.input
+    color="#3a77f8"
+    onChange={[Function]}
+  />
+  <styled.span
+    color="#3a77f8"
+  />
+</styled.label>
+`;

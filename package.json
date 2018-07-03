@@ -10,11 +10,21 @@
   "scripts": {
     "start": "parcel src/docs/index.html",
     "docs": "styleguidist server",
-    "build": "npm run clean && webpack --mode=production && npm run prepublish",
+    "build": "webpack --mode=production",
     "build:docs": "styleguidist build",
-    "prepublish": "cpx ./README.md build && cpx ./package.json build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf build/*"
+    "publication": "npm run clean && webpack --mode=production && npm run copy",
+    "copy": "cpx ./README.md build && cpx ./package.json build",
+    "clean": "rimraf build/*",
+    "test:watch": "jest --watch",
+    "test": "jest"
+  },
+  "jest": {
+    "setupFiles": [
+      "./jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ]
   },
   "author": "Morozov Dmitry",
   "license": "MIT",
@@ -23,6 +33,7 @@
     "@babel/preset-env": "^7.0.0-beta.51",
     "@babel/preset-react": "^7.0.0-beta.51",
     "babel-core": "^6.26.3",
+    "babel-jest": "^23.2.0",
     "babel-loader": "^8.0.0-beta.4",
     "babel-plugin-styled-components": "^1.5.1",
     "babel-preset-env": "^1.7.0",
@@ -30,11 +41,16 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cpx": "^1.5.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^5.0.1",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.2.0",
     "parcel-bundler": "^1.9.3",
     "path": "^0.12.7",
+    "react-addons-test-utils": "^15.6.2",
     "react-styleguidist": "^7.0.19",
     "rimraf": "^2.6.2",
     "webpack": "^4.12.1",
@@ -51,6 +67,23 @@
   "babel": {
     "plugins": [
       "babel-plugin-styled-components"
-    ]
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "env",
+            {
+              "modules": "commonjs",
+              "useBuiltIns": "usage",
+              "debug": false
+            }
+          ],
+          "stage-0",
+          "react",
+          "jest"
+        ]
+      }
+    }
   }
 }
