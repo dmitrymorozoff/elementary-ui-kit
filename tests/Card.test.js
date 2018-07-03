@@ -1,9 +1,5 @@
 import React from "react";
-import { Card } from "../src/lib/components/others/Card";
-import { Text } from "../src/lib/components/others/Text";
-import { Button } from "../src/lib/components/forms/Button";
-import { CardContent } from "../src/lib/components/others/Card/components/CardContent";
-import { CardButtons } from "../src/lib/components/others/Card/components/CardButtons";
+import { Card, Text, Button, CardContent, CardButtons } from "../src/lib";
 
 describe("<Card/>", () => {
     it("should render a default card", () => {

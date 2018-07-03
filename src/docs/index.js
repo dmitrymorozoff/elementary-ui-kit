@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Select, SelectItem } from "../../build";
+import { Label } from "../lib/components/others/Label";
 
 const App = () => (
     <div>
-        <div>
-            <Select>
-                <SelectItem>option 1</SelectItem>
-                <SelectItem>option 2</SelectItem>
-            </Select>
-        </div>
+        <Label>Default</Label>
+        <Label type="primary">Primary</Label>
+        <Label type="success">Success</Label>
+        <Label type="warning">Warning</Label>
+        <Label type="danger">Danger</Label>
     </div>
 );
 ReactDOM.render(<App />, document.getElementById("root"));

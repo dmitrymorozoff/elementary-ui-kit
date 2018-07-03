@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label/> should render a default label 1`] = `
+<div
+  className="sc-htoDjs juErTz"
+>
+  Hello Jest!
+</div>
+`;

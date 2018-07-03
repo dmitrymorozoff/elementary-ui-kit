@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch } from "../src/lib/components/forms/Switch";
+import { Switch } from "../src/lib";
 
 describe("<Switch/>", () => {
     it("should render a default switch", () => {

@@ -2,6 +2,7 @@ import { Button } from "./components/forms/Button";
 import { Switch } from "./components/forms/Switch";
 import { Input } from "./components/forms/Input";
 import { Card } from "./components/others/Card";
+import { Label } from "./components/others/Label";
 import { CardButtons } from "./components/others/Card/components/CardButtons";
 import { CardContent } from "./components/others/Card/components/CardContent";
 import { CardMedia } from "./components/others/Card/components/CardMedia";
@@ -28,4 +29,5 @@ export {
     UpArrow,
     Select,
     SelectItem,
+    Label,
 };

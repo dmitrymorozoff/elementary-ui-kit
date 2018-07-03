@@ -1,5 +1,5 @@
 import React from "react";
-import { Input } from "../src/lib/components/forms/Input";
+import { Input } from "../src/lib";
 
 describe("<Input/>", () => {
     it("should render a default input", () => {

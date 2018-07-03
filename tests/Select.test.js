@@ -1,6 +1,5 @@
 import React from "react";
-import { Select } from "../src/lib/components/forms/Select";
-import { SelectItem } from "../src/lib/components/forms/Select/components/SelectItem";
+import { Select, SelectItem } from "../src/lib";
 
 describe("<Select/>", () => {
     it("should render a default select", () => {

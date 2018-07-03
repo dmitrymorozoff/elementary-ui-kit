@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../src/lib/components/forms/Button";
+import { Button } from "../src/lib";
 
 describe("<Button/>", () => {
     it("should render a default button", () => {

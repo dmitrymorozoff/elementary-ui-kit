@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "../src/lib/components/others/Text";
+import { Text } from "../src/lib";
 
 describe("<Text/>", () => {
     it("should render a default text", () => {
