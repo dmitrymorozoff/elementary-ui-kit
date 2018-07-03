@@ -32,6 +32,12 @@ Start react-styleguidist
 npm run docs
 ```
 
+Start tests followed by jest.
+
+```bash
+npm run test
+```
+
 ### Basic Usage:
 
 ```jsx
@@ -65,3 +71,17 @@ ReactDOM.render(<App />, document.getElementById("root"));
     -   [RightUp](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/icons/RightUp)
     -   [RightDown](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/icons/RightDown)
     -   [Search](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/icons/Search)
+
+#### @TODO
+
+-   [ ] Table
+-   [ ] Modal
+-   [ ] Collapse
+-   [ ] List
+-   [ ] Radio
+-   [ ] Checkbox
+-   [ ] Tabs
+-   [ ] Textarea
+-   [ ] Link
+-   [ ] Nav
+-   [ ] Pagination
