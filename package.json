@@ -10,7 +10,7 @@
   "scripts": {
     "start": "parcel src/docs/index.html",
     "docs": "styleguidist server",
-    "build": "webpack --mode=production",
+    "build": "npm run clean && webpack --mode=production",
     "build:docs": "styleguidist build",
     "publication": "npm run clean && webpack --mode=production && npm run copy",
     "copy": "cpx ./README.md build && cpx ./package.json build",
