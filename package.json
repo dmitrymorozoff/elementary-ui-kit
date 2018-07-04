@@ -18,6 +18,7 @@
     "test:watch": "jest --watch",
     "test": "jest",
     "lint": "./node_modules/.bin/eslint --ext .js --ext .jsx ./src",
+    "tag": "git tag v$npm_package_version",
     "postversion": "git commit package.json -m \"Version $npm_package_version\" && npm run tag && git push && git push --tags && npm publish --registry=https://registry.npmjs.org/"
   },
   "pre-commit": [
