@@ -1,6 +1,7 @@
 import { Button } from "./components/forms/Button";
 import { Switch } from "./components/forms/Switch";
 import { Input } from "./components/forms/Input";
+import { Checkbox } from "./components/forms/Checkbox";
 import { Card } from "./components/others/Card";
 import { Label } from "./components/others/Label";
 import { CardButtons } from "./components/others/Card/components/CardButtons";
@@ -11,6 +12,7 @@ import { Search } from "./components/icons/Search";
 import { RightArrow } from "./components/icons/RightArrow";
 import { DownArrow } from "./components/icons/DownArrow";
 import { UpArrow } from "./components/icons/UpArrow";
+import { Checked } from "./components/icons/Checked";
 import { Select } from "./components/forms/Select";
 import { SelectItem } from "./components/forms/Select/components/SelectItem";
 
@@ -18,6 +20,7 @@ export {
     Button,
     Switch,
     Input,
+    Checkbox,
     Card,
     CardButtons,
     CardContent,
@@ -27,6 +30,7 @@ export {
     RightArrow,
     DownArrow,
     UpArrow,
+    Checked,
     Select,
     SelectItem,
     Label,

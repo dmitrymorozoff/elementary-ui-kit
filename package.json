@@ -16,8 +16,12 @@
     "copy": "cpx ./README.md build && cpx ./package.json build",
     "clean": "rimraf build/*",
     "test:watch": "jest --watch",
-    "test": "jest"
+    "test": "jest",
+    "lint": "./node_modules/.bin/eslint --ext .js --ext .jsx ./src"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "jest": {
     "setupFiles": [
       "./jestsetup.js"
@@ -26,7 +30,7 @@
       "<rootDir>/node_modules/enzyme-to-json/serializer"
     ]
   },
-  "author": "Morozov Dmitry",
+  "author": "Morozov Dmitry  <dimemorozovy@yandex.ru>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",
@@ -46,6 +50,7 @@
     "enzyme-to-json": "^3.3.4",
     "eslint": "^5.0.1",
     "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
     "eslint-plugin-react": "^7.10.0",
     "jest": "^23.2.0",
     "parcel-bundler": "^1.9.3",

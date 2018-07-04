@@ -2,7 +2,7 @@
 
 exports[`<Card/> should render a default card 1`] = `
 <div
-  className="sc-gzVnrw gVlzJE"
+  className="sc-iwsKbI fFwOsq"
   height="260px"
   width="275px"
 >

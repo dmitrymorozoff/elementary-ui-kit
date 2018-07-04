@@ -4,22 +4,28 @@ import { PropTypes } from "prop-types";
 
 const getPropsColor = props => props.color;
 
-const SwitchWrapper = styled.label`
+const CheckboxWrapper = styled.label`
+    font-family: "Lato", sans-serif;
     position: relative;
     display: inline-block;
-    width: 50px;
+    font-size: 15px;
     height: 25px;
+    padding-left: ${props => (props.label ? "32px" : "25px")};
+    line-height: 25px;
     opacity: ${props => (props.disabled ? "0.65" : "1")};
+    cursor: pointer;
 `;
 
-const SwitchElement = styled.input.attrs({
+const CheckboxElement = styled.input.attrs({
     type: "checkbox",
 })`
+    transition: 0.2s;
     display: none;
 `;
 
-const Slider = styled.span`
+const Box = styled.span`
     position: absolute;
+    width: 25px;
     top: 0;
     left: 0;
     right: 0;
@@ -28,11 +34,11 @@ const Slider = styled.span`
     cursor: pointer;
     background-color: #d8dadd;
     border-radius: 30px;
-    ${SwitchElement}:checked + & {
+    ${CheckboxElement}:checked + & {
         background-color: ${getPropsColor};
         box-shadow: 0 4px 25px -6px ${getPropsColor};
     }
-    ${SwitchElement}:focus + & {
+    ${CheckboxElement}:focus + & {
         box-shadow: 0 0 1px ${getPropsColor};
     }
     &:before {
@@ -45,34 +51,40 @@ const Slider = styled.span`
         width: 17px;
         background-color: white;
         border-radius: 50%;
-        ${SwitchElement}:checked + & {
-            transform: translateX(25px);
+        ${CheckboxElement}:hover + & {
+            transform: scale(0.75);
+        }
+        ${CheckboxElement}:checked + & {
+            transform: scale(1);
         }
     }
 `;
 
-export class Switch extends React.Component {
+export class Checkbox extends React.Component {
     render() {
-        const { disabled, color } = this.props;
+        const { disabled, color, label } = this.props;
         return (
-            <SwitchWrapper disabled={disabled}>
-                <SwitchElement {...this.props} />
-                <Slider color={color} />
-            </SwitchWrapper>
+            <CheckboxWrapper disabled={disabled} label={label}>
+                <CheckboxElement {...this.props} />
+                <Box color={color} />
+                {label}
+            </CheckboxWrapper>
         );
     }
 }
 
-Switch.defaultProps = {
+Checkbox.defaultProps = {
     onChange: () => {},
     color: "#3a77f8",
+    label: "",
 };
 
-Switch.propTypes = {
+Checkbox.propTypes = {
     checked: PropTypes.bool,
     defaultChecked: PropTypes.bool,
     onChange: PropTypes.func,
     name: PropTypes.string,
     color: PropTypes.string,
     disabled: PropTypes.bool,
+    label: PropTypes.string,
 };

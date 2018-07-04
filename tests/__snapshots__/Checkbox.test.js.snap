@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox/> should render a default checkbox 1`] = `
+<styled.label
+  label=""
+>
+  <styled.input
+    color="#3a77f8"
+    label=""
+    onChange={[Function]}
+  />
+  <styled.span
+    color="#3a77f8"
+  />
+</styled.label>
+`;

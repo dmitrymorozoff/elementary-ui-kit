@@ -32,6 +32,12 @@ Start react-styleguidist
 npm run docs
 ```
 
+Run linter
+
+```bash
+npm run lint
+```
+
 Start tests followed by jest.
 
 ```bash
