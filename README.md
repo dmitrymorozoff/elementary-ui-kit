@@ -11,11 +11,15 @@ A collection of reusable React UI components built with [styled-components](http
 ```bash
 # Install
 npm install --save elementary-ui-kit
+```
 
+```bash
 # You can also test the components locally by cloning this repo and doing the following steps:
 git clone https://github.com/dmitrymorozoff/elementary-ui-kit.git
+
 # Install dependencies from package.json:
 npm install
+
 # Start local development server `localhost:1234`:
 npm start
 
