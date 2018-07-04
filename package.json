@@ -1,6 +1,6 @@
 {
   "name": "elementary-ui-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A collection of reusable React components built with styled-components.",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,8 @@
     "clean": "rimraf build/*",
     "test:watch": "jest --watch",
     "test": "jest",
-    "lint": "./node_modules/.bin/eslint --ext .js --ext .jsx ./src"
+    "lint": "./node_modules/.bin/eslint --ext .js --ext .jsx ./src",
+    "postversion": "git commit package.json -m \"Version $npm_package_version\" && npm run tag && git push && git push --tags && npm publish --registry=https://registry.npmjs.org/"
   },
   "pre-commit": [
     "lint"
