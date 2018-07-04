@@ -2,45 +2,30 @@
 
 A collection of reusable React UI components built with [styled-components](https://styled-components.com).
 
+### Documentation
+
+-   To check out live examples visit [https://dmitrymorozoff.github.io/elementary-ui-kit/](https://dmitrymorozoff.github.io/elementary-ui-kit/)
+
 ### Install
 
 ```bash
+# Install
 npm install --save elementary-ui-kit
-```
 
-You can also test the components locally by cloning this repo and doing the following steps:
-
-```bash
+# You can also test the components locally by cloning this repo and doing the following steps:
 git clone https://github.com/dmitrymorozoff/elementary-ui-kit.git
-```
-
-Install dependencies from package.json:
-
-```bash
+# Install dependencies from package.json:
 npm install
-```
-
-Start local development server `localhost:1234`:
-
-```bash
+# Start local development server `localhost:1234`:
 npm start
-```
 
-Start react-styleguidist
-
-```bash
+# Start react-styleguidist
 npm run docs
-```
 
-Run linter
-
-```bash
+# Run linter
 npm run lint
-```
 
-Start tests followed by jest.
-
-```bash
+# Start tests followed by jest.
 npm run test
 ```
 
@@ -64,6 +49,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
     -   [Button](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Button)
     -   [Input](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Input)
     -   [Switch](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Switch)
+    -   [Checkbox](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Checkbox)
     -   [Select](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Select)
         -   [SelectItem](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Select/components/SelectItem)
 -   Others
@@ -86,7 +72,6 @@ ReactDOM.render(<App />, document.getElementById("root"));
 -   [ ] Collapse
 -   [ ] List
 -   [ ] Radio
--   [ ] Checkbox
 -   [ ] Tabs
 -   [ ] Textarea
 -   [ ] Link
