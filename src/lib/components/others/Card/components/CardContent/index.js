@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
 export const CardContent = styled.div`
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
@@ -13,9 +13,9 @@ export const CardContent = styled.div`
 `;
 
 CardContent.defaultProps = {
-    padding: "15px 5px"
+    padding: "15px 5px",
 };
 
 CardContent.propTypes = {
-    padding: PropTypes.string
+    padding: PropTypes.string,
 };

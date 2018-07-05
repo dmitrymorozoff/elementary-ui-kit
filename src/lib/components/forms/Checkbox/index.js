@@ -5,7 +5,7 @@ import { PropTypes } from "prop-types";
 const getPropsColor = props => props.color;
 
 const CheckboxWrapper = styled.label`
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     position: relative;
     display: inline-block;
     font-size: 15px;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
 export const Text = styled.p`
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5;
     font-size: ${props => props.fontSize};
     margin: 0;

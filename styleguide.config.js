@@ -20,7 +20,7 @@ const webpackConfig = {
 };
 
 module.exports = {
-    title: "Elementary UI Kit",
+    title: "Elementary UI",
     sections: [
         {
             content: "./README.md",

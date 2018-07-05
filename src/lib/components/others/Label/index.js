@@ -13,7 +13,7 @@ export const Label = styled.div`
     display: inline-block;
     border: 1px solid ${defaultColors};
     width: auto;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 12px;
     background-color: ${defaultColors};
     padding: 4px 12px;

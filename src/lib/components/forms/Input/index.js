@@ -16,7 +16,7 @@ const InputWrapper = styled.div`
     border-left: 2px solid
         ${props => {
             if (props.hasFocus && !props.error) {
-                return "#3A77F8";
+                return props.color;
             }
             if (props.error) {
                 return "#FE0C0D";
@@ -24,7 +24,7 @@ const InputWrapper = styled.div`
             return "#d8dadd";
         }};
     height: 45px;
-    width: 220px;
+    width: ${props => (props.fullWidth ? "100%" : "220px")};
     transition: 0.2s;
     background: ${props => (props.disabled ? "#F5F8FF" : "transparen")};
     box-shadow: 0 4px 15px -6px #d8dadd;
@@ -32,7 +32,7 @@ const InputWrapper = styled.div`
 `;
 
 export const InputElement = styled.input`
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     padding: ${props => {
         if (props.rightIconComponent) {
@@ -74,9 +74,9 @@ export class Input extends React.Component {
 
     render() {
         const { hasFocus } = this.state;
-        const { leftIconComponent, rightIconComponent, error, margin } = this.props;
+        const { leftIconComponent, rightIconComponent, ...wrapperProps } = this.props;
         return (
-            <InputWrapper hasFocus={hasFocus} disabled={this.props.disabled} error={error} margin={margin}>
+            <InputWrapper hasFocus={hasFocus} {...wrapperProps}>
                 {Boolean(leftIconComponent) && <Icon>{leftIconComponent}</Icon>}
                 <InputElement {...this.props} onFocus={() => this.setFocus(true)} onBlur={() => this.setFocus(false)} />
                 {Boolean(rightIconComponent) && <Icon>{rightIconComponent}</Icon>}
@@ -86,6 +86,7 @@ export class Input extends React.Component {
 }
 
 Input.defaultProps = {
+    fullWidth: false,
     type: "text",
     leftIconComponent: null,
     rightIconComponent: null,
@@ -93,6 +94,7 @@ Input.defaultProps = {
     required: false,
     error: false,
     margin: "0px",
+    color: "#3A77F8",
 };
 
 Input.propTypes = {
@@ -105,4 +107,6 @@ Input.propTypes = {
     required: PropTypes.bool,
     error: PropTypes.bool,
     margin: PropTypes.string,
+    fullWidth: PropTypes.bool,
+    color: PropTypes.string,
 };

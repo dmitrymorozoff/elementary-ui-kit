@@ -10,38 +10,54 @@ A collection of reusable React UI components built with [styled-components](http
 
 ```bash
 # Install
-npm install --save elementary-ui-kit
+$ npm install --save elementary-ui-kit
 ```
 
 ```bash
 # You can also test the components locally by cloning this repo and doing the following steps:
-git clone https://github.com/dmitrymorozoff/elementary-ui-kit.git
+$ git clone https://github.com/dmitrymorozoff/elementary-ui-kit.git
 
 # Install dependencies from package.json:
-npm install
+$ npm install
 
 # Start local development server `localhost:1234`:
-npm start
+$ npm start
 
 # Start react-styleguidist
-npm run docs
+$ npm run docs
 
 # Run linter
-npm run lint
+$ npm run lint
 
 # Start tests followed by jest.
-npm run test
+$ npm run test
 ```
 
-### Basic Usage:
+### Quick Start:
 
 ```jsx
 import React from "react";
 import ReactDOM from "react-dom";
-import { Button } from "elementary-ui-kit";
+import { Card, CardContent, Text, CardButtons, Button } from "elementary-ui-kit";
 
 function App() {
-    return <Button type="primary">Hello World</Button>;
+    return (
+        <Card hover={true}>
+            <CardContent>
+                <Text fontSize="28px" gutterBottom={true}>
+                    Penguin
+                </Text>
+                <Text>
+                    They live almost exclusively in the Southern Hemisphere, with only one species, the Galapagos
+                    penguin, found north of the equator.
+                </Text>
+                <CardButtons>
+                    <Button>Share</Button>
+                    <Button type="primary">More</Button>
+                </CardButtons>
+            </CardContent>
+        </Card>
+    );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
@@ -61,6 +77,9 @@ ReactDOM.render(<App />, document.getElementById("root"));
         -   [CardButtons](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Card/components/CardButtons)
         -   [CardContent](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Card/components/CardContent)
         -   [CardMedia](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Card/components/CardMedia)
+    -   [Collapse](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Collapse)
+        -   [CollapseTitle](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Collapse/components/CollapseTitle)
+        -   [CollapseContent](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Collapse/components/CollapseContent)
     -   [Text](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Text)
     -   [Label](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/others/Label)
 -   Icons
@@ -73,7 +92,6 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 -   [ ] Table
 -   [ ] Modal
--   [ ] Collapse
 -   [ ] List
 -   [ ] Radio
 -   [ ] Tabs
