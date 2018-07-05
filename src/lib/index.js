@@ -7,9 +7,13 @@ import { Label } from "./components/others/Label";
 import { CardButtons } from "./components/others/Card/components/CardButtons";
 import { CardContent } from "./components/others/Card/components/CardContent";
 import { CardMedia } from "./components/others/Card/components/CardMedia";
+import { Collapse } from "./components/others/Collapse";
+import { CollapseContent } from "./components/others/Collapse/components/CollapseContent";
+import { CollapseTitle } from "./components/others/Collapse/components/CollapseTitle";
 import { Text } from "./components/others/Text";
 import { Search } from "./components/icons/Search";
 import { RightArrow } from "./components/icons/RightArrow";
+import { Plus } from "./components/icons/Plus";
 import { DownArrow } from "./components/icons/DownArrow";
 import { UpArrow } from "./components/icons/UpArrow";
 import { Checked } from "./components/icons/Checked";
@@ -34,4 +38,8 @@ export {
     Select,
     SelectItem,
     Label,
+    Plus,
+    Collapse,
+    CollapseContent,
+    CollapseTitle,
 };

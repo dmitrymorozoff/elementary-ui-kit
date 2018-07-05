@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
 export const SelectItem = styled.div`
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     width: 100%;
     height: 45px;
     padding: 10px;

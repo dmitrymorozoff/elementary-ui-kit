@@ -2,14 +2,22 @@
 
 exports[`<Input/> should render a default input 1`] = `
 <styled.div
+  color="#3A77F8"
   disabled={false}
   error={false}
+  fullWidth={false}
   hasFocus={false}
   margin="0px"
+  onChange={[Function]}
+  required={false}
+  type="text"
+  value=""
 >
   <styled.input
+    color="#3A77F8"
     disabled={false}
     error={false}
+    fullWidth={false}
     leftIconComponent={null}
     margin="0px"
     onBlur={[Function]}

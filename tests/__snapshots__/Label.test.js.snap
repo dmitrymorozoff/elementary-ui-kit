@@ -2,7 +2,7 @@
 
 exports[`<Label/> should render a default label 1`] = `
 <div
-  className="sc-gZMcBi dFxoua"
+  className="sc-gZMcBi jLCrLG"
 >
   Hello Jest!
 </div>

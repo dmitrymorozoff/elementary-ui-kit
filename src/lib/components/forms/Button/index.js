@@ -12,7 +12,7 @@ const defaultColors = props => {
 };
 
 const ButtonElement = styled.button`
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     border: 2px solid ${props => props.theme.type.default};
     background-color: transparent;

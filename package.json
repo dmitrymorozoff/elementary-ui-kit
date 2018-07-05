@@ -40,6 +40,7 @@
     "babel-jest": "^23.2.0",
     "babel-loader": "^8.0.0-beta.4",
     "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
@@ -53,7 +54,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.0",
     "eslint-plugin-react": "^7.10.0",
     "jest": "^23.2.0",
-    "parcel-bundler": "^1.9.3",
+    "parcel-bundler": "^1.9.4",
     "path": "^0.12.7",
     "react-addons-test-utils": "^15.6.2",
     "react-styleguidist": "^7.0.19",
@@ -71,7 +72,8 @@
   },
   "babel": {
     "plugins": [
-      "babel-plugin-styled-components"
+      "babel-plugin-styled-components",
+      "babel-plugin-transform-object-rest-spread"
     ],
     "env": {
       "test": {

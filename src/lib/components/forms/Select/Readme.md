@@ -1,16 +1,31 @@
 ### Basic Usage:
 
 ```jsx
-<Select
-    placeholder="None"
-    onChange={data => {
-        console.log("data", data);
-    }}
->
-    <SelectItem value={1}>One</SelectItem>
-    <SelectItem value={2}>Two</SelectItem>
-    <SelectItem value={3}>Three</SelectItem>
-</Select>
+<div>
+    <Select
+        placeholder="None"
+        onChange={data => {
+            console.log("data", data);
+        }}
+    >
+        <SelectItem value={1}>One</SelectItem>
+        <SelectItem value={2}>Two</SelectItem>
+        <SelectItem value={3}>Three</SelectItem>
+    </Select>
+</div>
+<div style={{margin: "8px 0"}}>
+    <Select
+        placeholder="None"
+        fullWidth={true}
+        onChange={data => {
+            console.log("data", data);
+        }}
+    >
+        <SelectItem value={1}>One</SelectItem>
+        <SelectItem value={2}>Two</SelectItem>
+        <SelectItem value={3}>Three</SelectItem>
+    </Select>
+</div>
 ```
 
 ### Disabled option
@@ -18,6 +33,7 @@
 ```jsx
 <Select
     placeholder="None"
+    color="#a596e1"
     onChange={data => {
         console.log("data", data);
     }}

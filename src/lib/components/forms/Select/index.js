@@ -15,9 +15,9 @@ const Icon = styled.div`
 `;
 
 const SelectWrapper = styled.div`
-    width: 220px;
+    width: ${props => (props.fullWidth ? "100%" : "220px")};
     height: 45px;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     position: relative;
 `;
 
@@ -43,7 +43,7 @@ const SelectElement = styled.input`
     padding: 0 10px 0 10px;
     cursor: pointer;
     pointer-events: none;
-    border-left: 2px solid #3a77f8;
+    border-left: 2px solid ${props => props.color};
     background: transparent;
     &::placeholder {
         color: #abb3c8;
@@ -56,9 +56,9 @@ const SelectItemsWrapper = styled.div`
     position: absolute;
     left: 0;
     top: 55px;
-    width: 220px;
+    width: 100%;
     box-shadow: 0 4px 15px -6px #d8dadd;
-    border-left: 2px solid #3a77f8;
+    border-left: 2px solid ${props => props.color};
     background: #fff;
     transition: 0.2s;
     transform: ${props => (props.open ? "translateY(0)" : "translateY(25px)")};
@@ -80,13 +80,11 @@ export class Select extends React.Component {
     getSelectItems() {
         const { children } = this.props;
         return children.map((selectItem, index) => {
-            const name = selectItem.props.children;
-            const value = selectItem.props.value;
-            const disabled = selectItem.props.disabled;
+            const { children, value, disabled } = selectItem.props;
             return (
                 <SelectItem
                     disabled={disabled}
-                    onClick={!disabled ? this.handleSelectItem.bind(this, { name, value }) : null}
+                    onClick={!disabled ? this.handleSelectItem.bind(this, { name: children, value }) : null}
                     key={index.toString()}
                 >
                     {selectItem.props.children}
@@ -119,20 +117,28 @@ export class Select extends React.Component {
     }
 
     render() {
-        const { placeholder, disabled } = this.props;
+        const { placeholder, disabled, fullWidth, color } = this.props;
         const {
             isOpen,
             selected: { name },
         } = this.state;
         return (
-            <SelectWrapper>
+            <SelectWrapper fullWidth={fullWidth}>
                 <SelectHeader onClick={this.toggleSelect.bind(this)} disabled={disabled}>
-                    <SelectElement placeholder={placeholder} readOnly={true} value={name} disabled={disabled} />
+                    <SelectElement
+                        placeholder={placeholder}
+                        readOnly={true}
+                        value={name}
+                        disabled={disabled}
+                        color={color}
+                    />
                     <Icon open={isOpen}>
                         <DownArrow />
                     </Icon>
                 </SelectHeader>
-                <SelectItemsWrapper open={isOpen}>{this.getSelectItems()}</SelectItemsWrapper>
+                <SelectItemsWrapper open={isOpen} color={color}>
+                    {this.getSelectItems()}
+                </SelectItemsWrapper>
             </SelectWrapper>
         );
     }
@@ -141,12 +147,16 @@ export class Select extends React.Component {
 Select.defaultProps = {
     placeholder: "",
     disabled: false,
+    fullWidth: false,
+    color: "#3a77f8",
 };
 
 Select.propTypes = {
     placeholder: PropTypes.string,
     onChange: PropTypes.func,
     disabled: PropTypes.bool,
+    fullWidth: PropTypes.bool,
+    color: PropTypes.string,
     children: function(props, propName, componentName) {
         const prop = props[propName];
         let error = null;

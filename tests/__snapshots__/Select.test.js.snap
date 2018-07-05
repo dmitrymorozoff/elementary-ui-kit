@@ -1,12 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Select/> should render a default select 1`] = `
-<styled.div>
+<styled.div
+  fullWidth={false}
+>
   <styled.div
     disabled={false}
     onClick={[Function]}
   >
     <styled.input
+      color="#3a77f8"
       disabled={false}
       placeholder=""
       readOnly={true}
@@ -23,6 +26,7 @@ exports[`<Select/> should render a default select 1`] = `
     </styled.div>
   </styled.div>
   <styled.div
+    color="#3a77f8"
     open={false}
   >
     <styled.div
