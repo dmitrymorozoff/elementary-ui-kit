@@ -7,6 +7,14 @@
     "type": "git",
     "url": "https://github.com/dmitrymorozoff/elementary-ui-kit"
   },
+  "keywords": [
+    "react",
+    "react-component",
+    "ui library",
+    "ui",
+    "components",
+    "ui-kit"
+  ],
   "scripts": {
     "start": "parcel src/docs/index.html",
     "docs": "styleguidist server",
