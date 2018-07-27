@@ -68,6 +68,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 -   Forms
     -   [Button](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Button)
     -   [Input](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Input)
+    -   [Link](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Link)
     -   [Switch](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Switch)
     -   [Checkbox](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Checkbox)
     -   [Select](https://github.com/dmitrymorozoff/elementary-ui-kit/tree/master/src/lib/components/forms/Select)
