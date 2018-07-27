@@ -96,6 +96,5 @@ ReactDOM.render(<App />, document.getElementById("root"));
 -   [ ] Radio
 -   [ ] Tabs
 -   [ ] Textarea
--   [ ] Link
 -   [ ] Nav
 -   [ ] Pagination

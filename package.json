@@ -1,12 +1,20 @@
 {
   "name": "elementary-ui-kit",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A collection of reusable React components built with styled-components.",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/dmitrymorozoff/elementary-ui-kit"
   },
+  "keywords": [
+    "react",
+    "react-component",
+    "ui library",
+    "ui",
+    "components",
+    "ui-kit"
+  ],
   "scripts": {
     "start": "parcel src/docs/index.html",
     "docs": "styleguidist server",
@@ -33,12 +41,9 @@
   "author": "Morozov Dmitry  <dimemorozovy@yandex.ru>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.51",
-    "@babel/preset-env": "^7.0.0-beta.51",
-    "@babel/preset-react": "^7.0.0-beta.51",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.2.0",
-    "babel-loader": "^8.0.0-beta.4",
+    "babel-loader": "^7.1.5",
     "babel-plugin-styled-components": "^1.5.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",

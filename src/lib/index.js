@@ -1,4 +1,5 @@
 import { Button } from "./components/forms/Button";
+import { Link } from "./components/forms/Link";
 import { Switch } from "./components/forms/Switch";
 import { Input } from "./components/forms/Input";
 import { Checkbox } from "./components/forms/Checkbox";
@@ -22,6 +23,7 @@ import { SelectItem } from "./components/forms/Select/components/SelectItem";
 
 export {
     Button,
+    Link,
     Switch,
     Input,
     Checkbox,

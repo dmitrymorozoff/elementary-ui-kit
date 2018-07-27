@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link/> should render a default link 1`] = `
+<a
+  className="sc-bwzfXH cHWwuG"
+  color="#3a77f8"
+>
+  Hello Jest!
+</a>
+`;

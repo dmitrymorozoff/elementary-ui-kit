@@ -1,19 +1,54 @@
-### Basic Usage:
+### Basic Usage
+
+Select fields components are used for collecting user provided information from a list of options.
 
 ```jsx
-<div>
-    <Select
-        placeholder="None"
-        onChange={data => {
-            console.log("data", data);
-        }}
-    >
-        <SelectItem value={1}>One</SelectItem>
-        <SelectItem value={2}>Two</SelectItem>
-        <SelectItem value={3}>Three</SelectItem>
-    </Select>
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Select
+            placeholder="None"
+            onChange={data => {
+                console.log("data", data);
+            }}
+        >
+            <SelectItem value={1}>One</SelectItem>
+            <SelectItem value={2}>Two</SelectItem>
+            <SelectItem value={3}>Three</SelectItem>
+        </Select>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Select
+            color="#a596e1"
+            placeholder="None"
+            onChange={data => {
+                console.log("data", data);
+            }}
+        >
+            <SelectItem value={1}>One</SelectItem>
+            <SelectItem value={2}>Two</SelectItem>
+            <SelectItem value={3}>Three</SelectItem>
+        </Select>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Select
+            color="#ff3455"
+            placeholder="None"
+            onChange={data => {
+                console.log("data", data);
+            }}
+        >
+            <SelectItem value={1}>One</SelectItem>
+            <SelectItem value={2}>Two</SelectItem>
+            <SelectItem value={3}>Three</SelectItem>
+        </Select>
+    </div>
 </div>
-<div style={{margin: "8px 0"}}>
+```
+
+### Full width select
+
+```jsx
+<div style={{ margin: "8px 0" }}>
     <Select
         placeholder="None"
         fullWidth={true}
@@ -47,6 +82,8 @@
 ```
 
 ### Disabled select
+
+Disable the whole component.
 
 ```jsx
 <Select
