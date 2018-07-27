@@ -1,11 +1,27 @@
-### Basic Usage:
+### Basic Usage
+
+Buttons are used for actions, like in forms. Clicking a button will trigger corresponding business logic.
 
 ```jsx
-	<Button margin="8px">Default</Button>
-	<Button margin="8px" type="primary">Primary</Button>
-	<Button margin="8px" type="success">Success</Button>
-	<Button margin="8px" type="warning">Warning</Button>
-	<Button margin="8px" type="danger">Danger</Button>
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Button>Default</Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button onClick={() => alert("hello")} type="primary">
+            Primary
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button type="success">Success</Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button type="warning">Warning</Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button type="danger">Danger</Button>
+    </div>
+</div>
 ```
 
 ### Round Buttons:
@@ -59,7 +75,7 @@ Buttons without border and background.
 
 ### Sizes:
 
-Besides default size, Button component provides three additional sizes.
+Besides default size, Button component provides four additional sizes.
 
 ```jsx
 	<Button margin="8px">Default</Button>

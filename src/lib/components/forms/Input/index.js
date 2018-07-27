@@ -52,6 +52,7 @@ export const InputElement = styled.input`
     transition: 0.3s;
     background: transparent;
     color: ${props => (props.disabled ? "#d8dadd" : "#333")};
+    cursor: ${props => (props.disabled ? "not-allowed" : "pointer")};
     width: 100%;
     &::placeholder {
         color: #abb3c8;

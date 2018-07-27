@@ -1,4 +1,7 @@
-### Basic Usage:
+### Basic Usage
+
+This link is actually a button with an onClick handler
+Here is an example of a link with both an href and an onClick handler.
 
 ```jsx
 <div>
@@ -13,6 +16,8 @@
 ```
 
 ### Sizes and Colors
+
+Links can be colored as well.
 
 ```jsx
 <div style={{ display: "flex" }}>

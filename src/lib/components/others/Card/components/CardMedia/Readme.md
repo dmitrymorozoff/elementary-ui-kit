@@ -1,4 +1,4 @@
-### Basic Usage:
+### Basic Usage
 
 ```jsx
 <Card withImage={true}>
