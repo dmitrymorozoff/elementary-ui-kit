@@ -11,6 +11,8 @@ import { CardMedia } from "./components/others/Card/components/CardMedia";
 import { Collapse } from "./components/others/Collapse";
 import { CollapseContent } from "./components/others/Collapse/components/CollapseContent";
 import { CollapseTitle } from "./components/others/Collapse/components/CollapseTitle";
+import { Modal } from "./components/others/Modal";
+import { ModalContent } from "./components/others/Modal/components/ModalContent";
 import { Text } from "./components/others/Text";
 import { Search } from "./components/icons/Search";
 import { RightArrow } from "./components/icons/RightArrow";
@@ -44,4 +46,6 @@ export {
     Collapse,
     CollapseContent,
     CollapseTitle,
+    Modal,
+    ModalContent,
 };
