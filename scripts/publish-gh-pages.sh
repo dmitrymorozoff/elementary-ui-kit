@@ -1,4 +1,4 @@
-git checkout master
+# git checkout master
 git checkout -b tmp-gh-pages
 
 npm prune
