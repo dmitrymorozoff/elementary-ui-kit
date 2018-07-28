@@ -10,6 +10,6 @@ git commit -am 'update docs'
 
 git subtree split --prefix docs -b gh-pages
 git push -f origin gh-pages:gh-pages
-git checkout master
+git checkout develop
 git branch -D tmp-gh-pages
 git branch -D gh-pages
