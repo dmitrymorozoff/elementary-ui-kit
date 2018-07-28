@@ -19,7 +19,7 @@
     "start": "parcel src/docs/index.html",
     "docs": "styleguidist server",
     "build": "npm run clean && webpack --mode=production",
-    "build:docs": "styleguidist build",
+    "build:docs": "./node_modules/.bin/styleguidist build",
     "publication": "npm run clean && webpack --mode=production && npm run copy",
     "postpublication": "cpx 'styleguide/**/*.*' ./docs && ./scripts/publish-gh-pages.sh",
     "copy": "cpx ./README.md build && cpx ./package.json build",
