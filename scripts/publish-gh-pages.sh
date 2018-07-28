@@ -1,6 +1,7 @@
 git checkout master
 git checkout -b tmp-gh-pages
 
+npm prune
 npm install
 npm run build:docs
 
