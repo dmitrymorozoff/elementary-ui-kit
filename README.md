@@ -38,7 +38,13 @@ $ npm run test
 ```jsx
 import React from "react";
 import ReactDOM from "react-dom";
-import { Card, CardContent, Text, CardButtons, Button } from "elementary-ui-kit";
+import {
+    Card,
+    CardContent,
+    Text,
+    CardButtons,
+    Button,
+} from "elementary-ui-kit";
 
 function App() {
     return (
@@ -48,8 +54,9 @@ function App() {
                     Penguin
                 </Text>
                 <Text>
-                    They live almost exclusively in the Southern Hemisphere, with only one species, the Galapagos
-                    penguin, found north of the equator.
+                    They live almost exclusively in the Southern Hemisphere,
+                    with only one species, the Galapagos penguin, found north of
+                    the equator.
                 </Text>
                 <CardButtons>
                     <Button>Share</Button>
@@ -93,6 +100,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 -   [ ] Table
 -   [ ] Modal
+-   [ ] ModalPortal
 -   [ ] List
 -   [ ] Radio
 -   [ ] Tabs
