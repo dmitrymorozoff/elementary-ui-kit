@@ -1,6 +1,5 @@
 git checkout master
 git checkout -b tmp-gh-pages
-rimraf .gitignore
 
 npm install
 npm run build:docs
