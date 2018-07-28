@@ -4,6 +4,7 @@ git checkout -b tmp-gh-pages
 npm prune
 npm install
 npm run build:docs
+npm run copy:docs
 
 git add --all docs/
 git commit -am 'update docs'

@@ -21,7 +21,7 @@
     "build": "npm run clean && webpack --mode=production",
     "build:docs": "./node_modules/.bin/styleguidist build",
     "publication": "npm run clean && webpack --mode=production && npm run copy",
-    "postpublication": "cpx 'styleguide/**/*.*' ./docs && ./scripts/publish-gh-pages.sh",
+    "postpublication": "./scripts/publish-gh-pages.sh",
     "copy:docs": "cpx 'styleguide/**/*.*' ./docs",
     "copy": "cpx ./README.md build && cpx ./package.json build",
     "clean": "rimraf build/*",
