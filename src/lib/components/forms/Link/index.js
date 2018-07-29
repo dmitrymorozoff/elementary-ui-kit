@@ -40,4 +40,5 @@ Link.propTypes = {
     href: PropTypes.string,
     onClick: PropTypes.func,
     target: PropTypes.string,
+    className: PropTypes.string,
 };

@@ -13,6 +13,8 @@ import { CollapseContent } from "./components/others/Collapse/components/Collaps
 import { CollapseTitle } from "./components/others/Collapse/components/CollapseTitle";
 import { Modal } from "./components/others/Modal";
 import { ModalContent } from "./components/others/Modal/components/ModalContent";
+import { ModalTitle } from "./components/others/Modal/components/ModalTitle";
+import { ModalActions } from "./components/others/Modal/components/ModalActions";
 import { Text } from "./components/others/Text";
 import { Search } from "./components/icons/Search";
 import { RightArrow } from "./components/icons/RightArrow";
@@ -48,4 +50,6 @@ export {
     CollapseTitle,
     Modal,
     ModalContent,
+    ModalTitle,
+    ModalActions,
 };

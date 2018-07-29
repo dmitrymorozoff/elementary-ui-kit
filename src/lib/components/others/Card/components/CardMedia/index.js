@@ -20,11 +20,12 @@ export const CardMedia = styled.div`
 CardMedia.defaultProps = {
     height: "0",
     image: "",
-    paddingTop: "50%"
+    paddingTop: "50%",
 };
 
 CardMedia.propTypes = {
     height: PropTypes.string,
     image: PropTypes.string,
-    paddingTop: PropTypes.string
+    paddingTop: PropTypes.string,
+    className: PropTypes.string,
 };

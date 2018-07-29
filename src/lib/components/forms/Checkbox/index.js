@@ -62,9 +62,13 @@ const Box = styled.span`
 
 export class Checkbox extends React.Component {
     render() {
-        const { disabled, color, label } = this.props;
+        const { disabled, color, label, className } = this.props;
         return (
-            <CheckboxWrapper disabled={disabled} label={label}>
+            <CheckboxWrapper
+                disabled={disabled}
+                label={label}
+                className={className}
+            >
                 <CheckboxElement {...this.props} />
                 <Box color={color} />
                 {label}
@@ -87,4 +91,5 @@ Checkbox.propTypes = {
     color: PropTypes.string,
     disabled: PropTypes.bool,
     label: PropTypes.string,
+    className: PropTypes.string,
 };

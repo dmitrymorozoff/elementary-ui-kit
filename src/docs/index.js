@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Modal, ModalContent, Button } from "../lib";
+import { Modal, ModalContent, ModalTitle, Button, ModalActions } from "../lib";
 
 class App extends React.Component {
     constructor(props) {
@@ -31,27 +31,17 @@ class App extends React.Component {
                     open={open}
                     onClose={this.handleClose.bind(this)}
                 >
+                    <ModalTitle>Ramphastos</ModalTitle>
                     <ModalContent>
-                        Determine the max width of the dialog. The dialog width
-                        grows with the size of the screen, this property is
-                        useful on the desktop where you might need some coherent
-                        different width size across your application. Set to
-                        false to disable maxWidth.Determine the max width of the
-                        dialog. The dialog width grows with the size of the
-                        screen, this property is useful on the desktop where you
-                        might need some coherent different width size across
-                        your application. Set to false to disable
-                        maxWidth.Determine the max width of the dialog. The
-                        dialog width grows with the size of the screen, this
-                        property is useful on the desktop where you might need
-                        some coherent different width size across your
-                        application. Set to false to disable maxWidth.Determine
-                        the max width of the dialog. The dialog width grows with
-                        the size of the screen, this property is useful on the
-                        desktop where you might need some coherent different
-                        width size across your application. Set to false to
-                        disable maxWidth.
+                        Ramphastos is a genus of toucans, tropical and
+                        subtropical near passerine birds from Mexico, and
+                        Central and South America, which are brightly marked and
+                        have enormous, often colourful, bills.
                     </ModalContent>
+                    <ModalActions>
+                        <Button margin="5px">Disagree</Button>
+                        <Button margin="5px">Agree</Button>
+                    </ModalActions>
                 </Modal>
             </React.Fragment>
         );

@@ -84,7 +84,14 @@ export class Select extends React.Component {
             return (
                 <SelectItem
                     disabled={disabled}
-                    onClick={!disabled ? this.handleSelectItem.bind(this, { name: children, value }) : null}
+                    onClick={
+                        !disabled
+                            ? this.handleSelectItem.bind(this, {
+                                  name: children,
+                                  value,
+                              })
+                            : null
+                    }
                     key={index.toString()}
                 >
                     {selectItem.props.children}
@@ -117,14 +124,23 @@ export class Select extends React.Component {
     }
 
     render() {
-        const { placeholder, disabled, fullWidth, color } = this.props;
+        const {
+            placeholder,
+            disabled,
+            fullWidth,
+            color,
+            className,
+        } = this.props;
         const {
             isOpen,
             selected: { name },
         } = this.state;
         return (
-            <SelectWrapper fullWidth={fullWidth}>
-                <SelectHeader onClick={this.toggleSelect.bind(this)} disabled={disabled}>
+            <SelectWrapper fullWidth={fullWidth} className={className}>
+                <SelectHeader
+                    onClick={this.toggleSelect.bind(this)}
+                    disabled={disabled}
+                >
                     <SelectElement
                         placeholder={placeholder}
                         readOnly={true}
@@ -157,12 +173,17 @@ Select.propTypes = {
     disabled: PropTypes.bool,
     fullWidth: PropTypes.bool,
     color: PropTypes.string,
+    className: PropTypes.string,
     children: function(props, propName, componentName) {
         const prop = props[propName];
         let error = null;
         React.Children.forEach(prop, function(child) {
             if (child.type !== SelectItem) {
-                error = new Error("`" + componentName + "` children should be of type `SelectItem`.");
+                error = new Error(
+                    "`" +
+                        componentName +
+                        "` children should be of type `SelectItem`.",
+                );
             }
         });
         return error;

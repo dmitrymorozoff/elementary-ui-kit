@@ -19,4 +19,5 @@ CollapseContent.defaultProps = {
 CollapseContent.propTypes = {
     children: PropTypes.node,
     isOpen: PropTypes.bool,
+    className: PropTypes.string,
 };

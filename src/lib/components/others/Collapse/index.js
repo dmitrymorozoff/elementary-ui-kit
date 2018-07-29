@@ -11,7 +11,8 @@ const CollapseWrapper = styled.div`
     background-color: #fff;
     border-left: 3px solid ${props => (props.isOpen ? props.color : "#fff")};
     border: 1px solid #f2f2f5;
-    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.1), 0 55px 50px -35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.1),
+        0 55px 50px -35px rgba(0, 0, 0, 0.1);
     &:hover {
         border: 1px solid ${props => (props.isOpen ? "#f2f2f5" : props.color)};
     }
@@ -59,10 +60,15 @@ export class Collapse extends React.Component {
     }
 
     render() {
-        const { fullWidth, color } = this.props;
+        const { fullWidth, color, className } = this.props;
         const { isOpen } = this.state;
         return (
-            <CollapseWrapper fullWidth={fullWidth} isOpen={isOpen} color={color}>
+            <CollapseWrapper
+                className={className}
+                fullWidth={fullWidth}
+                isOpen={isOpen}
+                color={color}
+            >
                 {this.getChildrens()}
             </CollapseWrapper>
         );
@@ -80,4 +86,5 @@ Collapse.propTypes = {
     children: PropTypes.node,
     fullWidth: PropTypes.bool,
     color: PropTypes.string,
+    className: PropTypes.string,
 };

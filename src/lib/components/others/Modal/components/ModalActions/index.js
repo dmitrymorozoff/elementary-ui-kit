@@ -1,22 +1,20 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
-export const CardContent = styled.div`
-    font-family: "Roboto", sans-serif;
-    line-height: 1.5;
+export const ModalActions = styled.div`
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+    justify-content: flex-end;
+    margin-top: auto;
+    flex-wrap: wrap;
     padding: ${props => props.padding};
     box-sizing: border-box;
 `;
 
-CardContent.defaultProps = {
-    padding: "15px 5px",
+ModalActions.defaultProps = {
+    padding: "5px 5px 15px 5px",
 };
 
-CardContent.propTypes = {
+ModalActions.propTypes = {
     padding: PropTypes.string,
     className: PropTypes.string,
 };

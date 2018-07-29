@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { PropTypes } from "prop-types";
 
 export const CardButtons = styled.div`
     display: flex;
@@ -6,3 +7,7 @@ export const CardButtons = styled.div`
     margin-top: auto;
     flex-wrap: wrap;
 `;
+
+CardButtons.propTypes = {
+    className: PropTypes.string,
+};

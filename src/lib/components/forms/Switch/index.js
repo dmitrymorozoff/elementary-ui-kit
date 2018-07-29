@@ -53,9 +53,9 @@ const Slider = styled.span`
 
 export class Switch extends React.Component {
     render() {
-        const { disabled, color } = this.props;
+        const { disabled, color, className } = this.props;
         return (
-            <SwitchWrapper disabled={disabled}>
+            <SwitchWrapper disabled={disabled} className={className}>
                 <SwitchElement {...this.props} />
                 <Slider color={color} />
             </SwitchWrapper>
@@ -75,4 +75,5 @@ Switch.propTypes = {
     name: PropTypes.string,
     color: PropTypes.string,
     disabled: PropTypes.bool,
+    className: PropTypes.string,
 };
