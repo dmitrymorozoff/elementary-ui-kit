@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
+/** @component */
 export const SelectItem = styled.div`
     font-family: "Roboto", sans-serif;
     width: 100%;

@@ -1,6 +1,7 @@
 import { PropTypes } from "prop-types";
 import styled from "styled-components";
 
+/** @component */
 export const CollapseContent = styled.div`
     font-family: "Roboto", sans-serif;
     font-size: 15px;

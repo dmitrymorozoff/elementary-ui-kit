@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
+/** @component */
 export const CardMedia = styled.div`
     width: 100%;
     box-sizing: border-box;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
+/** @component */
 export const ModalTitle = styled.div`
     font-family: "Roboto", sans-serif;
     line-height: 1.5;

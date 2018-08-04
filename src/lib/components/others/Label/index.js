@@ -9,6 +9,7 @@ const defaultColors = props => {
     return "transparent";
 };
 
+/** @component */
 export const Label = styled.div`
     display: inline-block;
     border: 1px solid ${defaultColors};

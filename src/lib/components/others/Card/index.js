@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
+/** @component */
 export const Card = styled.div`
     display: flex;
     flex-direction: column;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
+/** @component */
 export const Link = styled.a`
     font-family: "Roboto", sans-serif;
     font-size: ${props => {

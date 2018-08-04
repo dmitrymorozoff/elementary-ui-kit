@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { PropTypes } from "prop-types";
 
+/** @component */
 export const ModalActions = styled.div`
     display: flex;
     justify-content: flex-end;
