@@ -12,7 +12,7 @@ export const ModalActions = styled.div`
 `;
 
 ModalActions.defaultProps = {
-    padding: "5px 5px 15px 5px",
+    padding: "5px 20px 20px 20px",
 };
 
 ModalActions.propTypes = {

@@ -5,16 +5,15 @@ import { PropTypes } from "prop-types";
 export const ModalTitle = styled.div`
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
-    font-size: 22px;
+    font-size: 26px;
     width: 100%;
     text-align: center;
     padding: ${props => props.padding};
     box-sizing: border-box;
-    border-bottom: 1px solid #eee;
 `;
 
 ModalTitle.defaultProps = {
-    padding: "5px 5px 15px 5px",
+    padding: "20px 20px 10px 20px",
 };
 
 ModalTitle.propTypes = {

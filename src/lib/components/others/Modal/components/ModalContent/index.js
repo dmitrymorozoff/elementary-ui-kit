@@ -14,7 +14,7 @@ export const ModalContent = styled.div`
 `;
 
 ModalContent.defaultProps = {
-    padding: "15px 5px",
+    padding: "5px 25px",
 };
 
 ModalContent.propTypes = {

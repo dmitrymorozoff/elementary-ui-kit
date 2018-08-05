@@ -8,7 +8,8 @@ const Outer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: scroll;
     height: 100%;
     z-index: 1;
     transition: 0.35s;
@@ -21,19 +22,19 @@ const Overlay = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.045);
+    background-color: rgba(0, 0, 0, 0.05);
 `;
 
 const ModalItem = styled.div`
     position: relative;
     width: 500px;
-    padding: 20px;
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 3;
