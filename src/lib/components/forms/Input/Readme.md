@@ -4,24 +4,11 @@ Basic usage example.
 
 ```jsx
 <div style={{ display: "flex", flexDirection: "column" }}>
-    <div style={{ display: "flex" }}>
-        <Input margin="8px" placeholder="First name" />
-        <Input margin="8px" placeholder="Middle name" />
-        <Input margin="8px" placeholder="Last name" />
+    <div style={{ margin: "8px" }}>
+        <Input placeholder="Type a text" />
     </div>
-    <Input margin="8px" placeholder="Password" type="password" />
-</div>
-```
-
-### Full width input
-
-```jsx
-<div style={{ display: "flex", flexDirection: "column" }}>
-    <Input margin="8px" placeholder="Type a text" fullWidth={true} />
-    <div style={{ display: "flex" }}>
-        <Input margin="8px" placeholder="Type a text" fullWidth={true} />
-        <Input margin="8px" placeholder="Type a text" fullWidth={true} />
-        <Input margin="8px" placeholder="Type a text" fullWidth={true} />
+    <div style={{ margin: "8px" }}>
+        <Input placeholder="Password" type="password" />
     </div>
 </div>
 ```
@@ -29,13 +16,31 @@ Basic usage example.
 ### Disabled
 
 ```jsx
-<Input margin="8px" placeholder="Type a text" disabled={true} value="Disabled" />
+<div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ margin: "8px" }}>
+        <Input placeholder="Type a text" disabled={true} value="Disabled" />
+    </div>
+</div>
 ```
 
 ### Error
 
 ```jsx
-<Input margin="8px" placeholder="Error" error={true} />
+<div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ margin: "8px" }}>
+        <Input placeholder="Error" error={true} />
+    </div>
+</div>
+```
+
+### Full width input
+
+```jsx
+<div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ margin: "8px", width: "100%" }}>
+        <Input placeholder="Type a text" fullWidth={true} />
+    </div>
+</div>
 ```
 
 ### Input with icon
@@ -43,6 +48,12 @@ Basic usage example.
 Add an icon to indicate input type.
 
 ```jsx
-<Input margin="8px" placeholder="Place Input" leftIconComponent={<Search />} />
-<Input margin="8px" placeholder="Place Input" rightIconComponent={<RightArrow/>} />
+<div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ margin: "8px" }}>
+        <Input placeholder="Type a text" leftIconComponent={<Search />} />
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Input placeholder="Type a text" rightIconComponent={<RightArrow />} />
+    </div>
+</div>
 ```

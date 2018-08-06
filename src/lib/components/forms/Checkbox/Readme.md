@@ -7,28 +7,30 @@ If you use only one checkbox, it is the same as using Switch to toggle between t
 ```jsx
 <div style={{ display: "flex" }}>
     <div style={{ margin: "8px" }}>
-        <Checkbox label="default" />
+        <Checkbox label="Default" />
     </div>
     <div style={{ margin: "8px" }}>
-        <Checkbox checked={true} label="checked" />
+        <Checkbox checked={true} label="Checked" />
     </div>
     <div style={{ margin: "8px" }}>
-        <Checkbox checked={true} label="item 1" />
+        <Checkbox checked={true} label="Option 1" />
     </div>
     <div style={{ margin: "8px" }}>
-        <Checkbox checked={true} label="item 2" color="#a596e1" />
+        <Checkbox checked={true} label="Option 2" color="#a596e1" />
     </div>
 </div>
 ```
 
 ### Disabled
 
+Disabled state for checkbox.
+
 ```jsx
 <div style={{ margin: "8px" }}>
-    <Checkbox disabled={true}  label="item 1" />
+    <Checkbox disabled={true}  label="Option 1" />
 </div>
 <div style={{ margin: "8px" }}>
-    <Checkbox disabled={true} checked={true} label="item 2" />
+    <Checkbox disabled={true} checked={true} label="Option 2" />
 </div>
 ```
 
@@ -36,7 +38,7 @@ If you use only one checkbox, it is the same as using Switch to toggle between t
 
 ```jsx
 <div style={{ margin: "8px" }}>
-    <Checkbox defaultChecked={true} label="item 1" />
+    <Checkbox defaultChecked={true} label="Option 1" />
 </div>
 ```
 
@@ -45,16 +47,19 @@ If you use only one checkbox, it is the same as using Switch to toggle between t
 ```jsx
 <div style={{ display: "flex", flexDirection: "column" }}>
     <div style={{ margin: "8px" }}>
-        <Checkbox label="Item 1" />
+        <Checkbox defaultChecked={true} label="Option 1" />
     </div>
     <div style={{ margin: "8px" }}>
-        <Checkbox label="Item 2" />
+        <Checkbox label="Option 2" />
     </div>
     <div style={{ margin: "8px" }}>
-        <Checkbox label="Item 3" />
+        <Checkbox label="Option 3" />
     </div>
     <div style={{ margin: "8px" }}>
-        <Checkbox label="Item 4" />
+        <Checkbox label="Option 4" />
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Checkbox disabled={true} label="Disabled Option 5" />
     </div>
 </div>
 ```
