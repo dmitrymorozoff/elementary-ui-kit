@@ -15,10 +15,7 @@ const Wrapper = styled.div`
     transition: 0.2s;
     &:hover {
         color: ${props => props.color};
-        background-color: ${props =>
-            props.isOpen
-                ? "transparent"
-                : props.color && lighten(0.35, props.color)};
+        background-color: ${props => (props.isOpen ? "transparent" : props.color && lighten(0.35, props.color))};
     }
 `;
 

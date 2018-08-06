@@ -124,23 +124,14 @@ export class Select extends React.Component {
     }
 
     render() {
-        const {
-            placeholder,
-            disabled,
-            fullWidth,
-            color,
-            className,
-        } = this.props;
+        const { placeholder, disabled, fullWidth, color, className } = this.props;
         const {
             isOpen,
             selected: { name },
         } = this.state;
         return (
             <SelectWrapper fullWidth={fullWidth} className={className}>
-                <SelectHeader
-                    onClick={this.toggleSelect.bind(this)}
-                    disabled={disabled}
-                >
+                <SelectHeader onClick={this.toggleSelect.bind(this)} disabled={disabled}>
                     <SelectElement
                         placeholder={placeholder}
                         readOnly={true}
@@ -179,11 +170,7 @@ Select.propTypes = {
         let error = null;
         React.Children.forEach(prop, function(child) {
             if (child.type !== SelectItem) {
-                error = new Error(
-                    "`" +
-                        componentName +
-                        "` children should be of type `SelectItem`.",
-                );
+                error = new Error("`" + componentName + "` children should be of type `SelectItem`.");
             }
         });
         return error;

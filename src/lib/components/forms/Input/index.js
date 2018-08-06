@@ -75,22 +75,12 @@ export class Input extends React.Component {
 
     render() {
         const { hasFocus } = this.state;
-        const {
-            leftIconComponent,
-            rightIconComponent,
-            ...wrapperProps
-        } = this.props;
+        const { leftIconComponent, rightIconComponent, ...wrapperProps } = this.props;
         return (
             <InputWrapper hasFocus={hasFocus} {...wrapperProps}>
                 {Boolean(leftIconComponent) && <Icon>{leftIconComponent}</Icon>}
-                <InputElement
-                    {...this.props}
-                    onFocus={() => this.setFocus(true)}
-                    onBlur={() => this.setFocus(false)}
-                />
-                {Boolean(rightIconComponent) && (
-                    <Icon>{rightIconComponent}</Icon>
-                )}
+                <InputElement {...this.props} onFocus={() => this.setFocus(true)} onBlur={() => this.setFocus(false)} />
+                {Boolean(rightIconComponent) && <Icon>{rightIconComponent}</Icon>}
             </InputWrapper>
         );
     }

@@ -13,8 +13,7 @@ export const ModalMedia = styled.div`
     padding: 10px;
     padding-top: ${props => (props.height ? 0 : props.paddingTop)};
     border-radius: 5px;
-    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.35),
-        0 55px 50px -35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.35), 0 55px 50px -35px rgba(0, 0, 0, 0.15);
     margin-left: ${props => (props.withMargin ? "-10%" : 0)};
     margin-top: ${props => (props.withMargin ? "-10%" : 0)};
 `;

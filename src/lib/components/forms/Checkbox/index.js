@@ -64,11 +64,7 @@ export class Checkbox extends React.Component {
     render() {
         const { disabled, color, label, className } = this.props;
         return (
-            <CheckboxWrapper
-                disabled={disabled}
-                label={label}
-                className={className}
-            >
+            <CheckboxWrapper disabled={disabled} label={label} className={className}>
                 <CheckboxElement {...this.props} />
                 <Box color={color} />
                 {label}

@@ -13,8 +13,7 @@ export const CardMedia = styled.div`
     padding: 10px;
     padding-top: ${props => props.paddingTop};
     border-radius: 5px;
-    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.35),
-        0 55px 50px -35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.35), 0 55px 50px -35px rgba(0, 0, 0, 0.15);
     margin-top: -25%;
 `;
 

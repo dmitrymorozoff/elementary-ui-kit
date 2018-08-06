@@ -41,12 +41,6 @@ Label.defaultProps = {
 
 Label.propTypes = {
     theme: PropTypes.object,
-    type: PropTypes.oneOf([
-        "default",
-        "primary",
-        "success",
-        "warning",
-        "danger",
-    ]),
+    type: PropTypes.oneOf(["default", "primary", "success", "warning", "danger"]),
     className: PropTypes.string,
 };

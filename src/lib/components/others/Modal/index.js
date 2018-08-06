@@ -41,8 +41,7 @@ const ModalItem = styled.div`
     z-index: 2;
     border: 1px solid #f2f2f5;
     text-align: left;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 20px -15px,
-        rgba(0, 0, 0, 0.15) 0px 55px 50px -35px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 20px -15px, rgba(0, 0, 0, 0.15) 0px 55px 50px -35px;
     transition: 0.35s;
     transform: ${props => (props.open ? "scale(1)" : "scale(1.2)")};
 `;
