@@ -42,16 +42,16 @@ Integrate information in a card container.
 <div style={{ display: "flex" }}>
     <Card height="440px" withImage={true}>
         <CardMedia
-            image="https://images.unsplash.com/photo-1491930722919-a5fc9ad49a75?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=182a62e29e620b1e9cf32109d62723a3&auto=format&fit=crop&w=1350&q=80"
+            image="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0e3917e828b7c2502b0041813eff1294&auto=format&fit=crop&w=934&q=80"
             paddingTop="95%"
         />
         <CardContent>
             <Text fontSize="28px" gutterBottom={true}>
-                Labrador
+                Light
             </Text>
             <Text>
-                The Labrador is one of the most popular breeds of dog in Canada, the United Kingdom and the United
-                States.
+                The word usually refers to visible light, which is the visible spectrum that is visible to the human eye
+                and is responsible for the sense of sight.
             </Text>
             <CardButtons>
                 <Button>Share</Button>
@@ -61,16 +61,16 @@ Integrate information in a card container.
     </Card>
     <Card height="440px" hover={true} withImage={true}>
         <CardMedia
-            image="https://images.unsplash.com/photo-1491930722919-a5fc9ad49a75?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=182a62e29e620b1e9cf32109d62723a3&auto=format&fit=crop&w=1350&q=80"
+            image="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0e3917e828b7c2502b0041813eff1294&auto=format&fit=crop&w=934&q=80"
             paddingTop="95%"
         />
         <CardContent>
             <Text fontSize="28px" gutterBottom={true}>
-                Labrador
+                Light
             </Text>
             <Text>
-                The Labrador is one of the most popular breeds of dog in Canada, the United Kingdom and the United
-                States.
+                The word usually refers to visible light, which is the visible spectrum that is visible to the human eye
+                and is responsible for the sense of sight.
             </Text>
             <CardButtons>
                 <Button fullWidth={true}>Learn more</Button>

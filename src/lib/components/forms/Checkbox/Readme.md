@@ -1,3 +1,5 @@
+Checkbox can be used alone to switch between two states.
+
 ### Basic Usage
 
 A group of options for multiple choices.
@@ -16,7 +18,7 @@ If you use only one checkbox, it is the same as using Switch to toggle between t
         <Checkbox checked={true} label="Option 1" />
     </div>
     <div style={{ margin: "8px" }}>
-        <Checkbox checked={true} label="Option 2" color="#a596e1" />
+        <Checkbox checked={true} label="Option 2" color="#E618E8" />
     </div>
 </div>
 ```
@@ -43,6 +45,8 @@ Disabled state for checkbox.
 ```
 
 ### Checkboxes group
+
+It is used for multiple checkboxes which are bound in one group, and indicates whether one option is selected by checking if it is checked.
 
 ```jsx
 <div style={{ display: "flex", flexDirection: "column" }}>

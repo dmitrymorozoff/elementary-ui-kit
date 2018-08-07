@@ -4,18 +4,20 @@ This link is actually a button with an onClick handler
 Here is an example of a link with both an href and an onClick handler.
 
 ```jsx
-<div>
-    <Link
-        onClick={() => {
-            alert("Hello World!");
-        }}
-    >
-        Hello world
-    </Link>
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Link
+            onClick={() => {
+                alert("Hello World!");
+            }}
+        >
+            Default Link
+        </Link>
+    </div>
 </div>
 ```
 
-### Sizes and Colors
+### Sizes
 
 Links can be colored as well.
 
@@ -27,7 +29,7 @@ Links can be colored as well.
                 alert("Hello World!");
             }}
         >
-            Default
+            Default Link
         </Link>
     </div>
     <div style={{ margin: "8px" }}>
@@ -37,7 +39,7 @@ Links can be colored as well.
                 alert("Hello World!");
             }}
         >
-            Medium
+            Medium Link
         </Link>
     </div>
     <div style={{ margin: "8px" }}>
@@ -47,7 +49,7 @@ Links can be colored as well.
                 alert("Hello World!");
             }}
         >
-            Small
+            Small Link
         </Link>
     </div>
     <div style={{ margin: "8px" }}>
@@ -57,52 +59,57 @@ Links can be colored as well.
                 alert("Hello World!");
             }}
         >
-            Mini
+            Mini Link
         </Link>
     </div>
 </div>
+```
+
+### Colors
+
+```jsx
 <div style={{ display: "flex" }}>
     <div style={{ margin: "8px" }}>
         <Link
-        color="#000"
+            color="#5510F8"
             onClick={() => {
                 alert("Hello World!");
             }}
         >
-            Black
+            Black Link
         </Link>
     </div>
     <div style={{ margin: "8px" }}>
         <Link
-        color="#4FD496"
+            color="#E618E8"
             size="medium"
             onClick={() => {
                 alert("Hello World!");
             }}
         >
-            Green
+            Green Link
         </Link>
     </div>
     <div style={{ margin: "8px" }}>
         <Link
-        color="#FAAF27"
+            color="#FAAF27"
             size="small"
             onClick={() => {
                 alert("Hello World!");
             }}
         >
-            Orange
+            Orange Link
         </Link>
     </div>
     <div style={{ margin: "8px" }}>
         <Link
-        color="#FE0C0D"
+            color="#FE0C0D"
             size="mini"
             onClick={() => {
                 alert("Hello World!");
             }}
         >
-            Red
+            Red Link
         </Link>
     </div>
 </div>

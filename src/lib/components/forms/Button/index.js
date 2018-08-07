@@ -12,6 +12,8 @@ const defaultColors = props => {
 };
 
 const ButtonElement = styled.button`
+    display: flex;
+    justify-content: center;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     border: 2px solid ${props => props.theme.type.default};

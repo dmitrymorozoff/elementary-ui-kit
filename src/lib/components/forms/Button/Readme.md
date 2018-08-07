@@ -24,73 +24,172 @@ Buttons are used for actions, like in forms. Clicking a button will trigger corr
 </div>
 ```
 
-### Round Buttons:
+### Round Buttons
 
 ```jsx
-	<Button margin="8px" round>Default</Button>
-	<Button margin="8px" type="primary" round>
-		Primary
-	</Button>
-	<Button margin="8px" type="success" round>
-		Success
-	</Button>
-	<Button margin="8px" type="warning" round>
-		Warning
-	</Button>
-	<Button margin="8px" type="danger" round>
-		Danger
-	</Button>
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Button round>Default</Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button type="primary" round>
+            Primary
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button type="success" round>
+            Success
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button type="warning" round>
+            Warning
+        </Button>
+    </div>
+    <Button type="danger" round>
+        Danger
+    </Button>
+</div>
 ```
 
-### Disabled Buttons:
+### Disabled Buttons
 
 The `disabled` attribute determines if the button is disabled.
 
 ```jsx
-	<Button margin="8px" disabled={true}>Default</Button>
-	<Button margin="8px" disabled={true} type="primary">
-		Primary
-	</Button>
-	<Button margin="8px" disabled={true} type="success">
-		Success
-	</Button>
-	<Button margin="8px" disabled={true} type="warning">
-		Warning
-	</Button>
-	<Button margin="8px" disabled={true} type="danger">
-		Danger
-	</Button>
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Button disabled={true}>Default</Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button disabled={true} type="primary">
+            Primary
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button disabled={true} type="success">
+            Success
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button disabled={true} type="warning">
+            Warning
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button disabled={true} type="danger">
+            Danger
+        </Button>
+    </div>
+</div>
 ```
 
-### Text Buttons:
+### Text Buttons
 
 Buttons without border and background.
 
 ```jsx
-	<Button margin="8px" type="text">Default</Button>
-	<Button margin="8px" type="text" disabled={true}>
-		Primary
-	</Button>
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Button type="text">Default</Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button type="text" disabled={true}>
+            Primary
+        </Button>
+    </div>
+</div>
 ```
 
-### Sizes:
+### Icon Buttons
+
+Use icons to add more meaning to Button. You can use icon alone to save some space, or use it with text.
+
+```jsx
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Button type="primary">
+            <DownArrow fill="#fff" style={{ margin: "auto 0" }} />
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button type="primary">
+            Search <Search fill="#fff" style={{ margin: "auto 0 auto 8px" }} />
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button type="primary">
+            Next Page <RightArrow fill="#fff" style={{ marginLeft: "8px" }} />
+        </Button>
+    </div>
+</div>
+```
+
+### Small Icon Buttons
+
+```jsx
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Button size="small" type="primary">
+            <DownArrow fill="#fff" style={{ margin: "auto 0" }} />
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button size="small" type="primary">
+            Search <Search fill="#fff" style={{ margin: "auto 0 auto 8px" }} />
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button size="small" type="primary">
+            Next Page <RightArrow fill="#fff" style={{ marginLeft: "8px" }} />
+        </Button>
+    </div>
+</div>
+```
+
+### Sizes
 
 Besides default size, Button component provides four additional sizes.
 
 ```jsx
-	<Button margin="8px">Default</Button>
-	<Button margin="8px" size="medium" type="primary">Medium</Button>
-	<Button margin="8px" size="small" type="primary">Small</Button>
-	<Button margin="8px" size="mini" type="primary">Mini</Button>
-	<br/>
-	<Button margin="8px" round>Default</Button>
-	<Button margin="8px" size="medium" round type="danger">
-		Medium
-	</Button>
-	<Button margin="8px" size="small" round type="danger">
-		Small
-	</Button>
-	<Button margin="8px" size="mini" round type="danger">
-		Mini
-	</Button>
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Button>Default</Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button size="medium" type="primary">
+            Medium
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button size="small" type="primary">
+            Small
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button size="mini" type="primary">
+            Mini
+        </Button>
+    </div>
+</div>
+<div style={{ display: "flex" }}>
+    <div style={{ margin: "8px" }}>
+        <Button round>Default</Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button size="medium" round type="danger">
+            Medium
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button size="small" round type="danger">
+            Small
+        </Button>
+    </div>
+    <div style={{ margin: "8px" }}>
+        <Button size="mini" round type="danger">
+            Mini
+        </Button>
+    </div>
+</div>
 ```

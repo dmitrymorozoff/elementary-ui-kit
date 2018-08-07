@@ -8,67 +8,23 @@ Select fields components are used for collecting user provided information from 
         <Select
             placeholder="None"
             onChange={data => {
-                console.log("data", data);
+                console.log("Data", data);
             }}
         >
-            <SelectItem value={1}>One</SelectItem>
-            <SelectItem value={2}>Two</SelectItem>
-            <SelectItem value={3}>Three</SelectItem>
-        </Select>
-    </div>
-    <div style={{ margin: "8px" }}>
-        <Select
-            color="#a596e1"
-            placeholder="None"
-            onChange={data => {
-                console.log("data", data);
-            }}
-        >
-            <SelectItem value={1}>One</SelectItem>
-            <SelectItem value={2}>Two</SelectItem>
-            <SelectItem value={3}>Three</SelectItem>
-        </Select>
-    </div>
-    <div style={{ margin: "8px" }}>
-        <Select
-            color="#ff3455"
-            placeholder="None"
-            onChange={data => {
-                console.log("data", data);
-            }}
-        >
-            <SelectItem value={1}>One</SelectItem>
-            <SelectItem value={2}>Two</SelectItem>
-            <SelectItem value={3}>Three</SelectItem>
+            <SelectItem value={1}>Option 1</SelectItem>
+            <SelectItem value={2}>Option 2</SelectItem>
+            <SelectItem value={3}>Option 3</SelectItem>
         </Select>
     </div>
 </div>
 ```
 
-### Full width select
-
-```jsx
-<div style={{ margin: "8px 0" }}>
-    <Select
-        placeholder="None"
-        fullWidth={true}
-        onChange={data => {
-            console.log("data", data);
-        }}
-    >
-        <SelectItem value={1}>One</SelectItem>
-        <SelectItem value={2}>Two</SelectItem>
-        <SelectItem value={3}>Three</SelectItem>
-    </Select>
-</div>
-```
-
-### Disabled option
+### Disabled Option
 
 ```jsx
 <Select
     placeholder="None"
-    color="#a596e1"
+    color="#E618E8"
     onChange={data => {
         console.log("data", data);
     }}
@@ -81,7 +37,7 @@ Select fields components are used for collecting user provided information from 
 </Select>
 ```
 
-### Disabled select
+### Disabled Select
 
 Disable the whole component.
 
@@ -97,4 +53,22 @@ Disable the whole component.
     <SelectItem value={2}>Option 2</SelectItem>
     <SelectItem value={3}>Option 3</SelectItem>
 </Select>
+```
+
+### Full Width Select
+
+```jsx
+<div style={{ margin: "8px 0" }}>
+    <Select
+        placeholder="None"
+        fullWidth={true}
+        onChange={data => {
+            console.log("Data", data);
+        }}
+    >
+        <SelectItem value={1}>Option 1</SelectItem>
+        <SelectItem value={2}>Option 2</SelectItem>
+        <SelectItem value={3}>Option 3</SelectItem>
+    </Select>
+</div>
 ```
